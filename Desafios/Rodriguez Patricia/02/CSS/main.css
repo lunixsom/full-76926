@@ -1,0 +1,95 @@
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16
+    px;
+    color: #333333;
+    list-style-position: inside;
+   }
+body{
+    margin-left: 20px;
+    margin-right: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+header{
+     div{
+         border-style: double;
+         border-radius: 1rem 0 1rem;
+         padding-left: 10px;
+         padding-right: 10px;
+         box-sizing: border-box;
+        img{
+            background-image: url(./assets/images/background.png);
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: repeat;
+           } 
+              
+    
+    nav ul li{
+        list-style: none;
+        a:link,
+        a:visited,
+        a:active{
+            color: #333333;
+            text-decoration: none;
+            font-size: medium;
+            font-family:'Times New Roman', Times, serif;
+            }
+            a:hover{
+            font-weight: bold;
+            }
+            }
+     }
+        
+        }
+main {
+     img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 0.5rem;
+    }
+}
+section {
+    article{
+        h3{
+            color:#801535;
+        }
+    }
+    p{
+        text-align: justify;
+    }
+         ul li{
+            list-style-type:square;
+        }   
+}
+
+aside section{
+    h3{
+        border-bottom: 4px solid #114260;
+    }
+    ul li{
+        list-style-image: url(./assets/icons/skill-item.png);
+}
+}
+footer{
+    background: 50px #114260;
+    color: beige;
+}
+h1{
+    text-transform:uppercase;
+    text-align:left;
+    color:#114260;
+    @import url(./assets/fonts/moogalator);
+    font-family: moogalator;
+    src: url(./assets/fonts/moogalator);
+    }
+h2,
+h3{
+    text-transform: capitalize;
+}
+

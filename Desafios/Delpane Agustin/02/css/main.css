@@ -1,0 +1,115 @@
+@font-face {
+    font-family: moogalator;
+    src: url(./../assets/fonts/Moogalator.ttf);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #333333;
+	background-color: f8f8f8;
+	font-family: Arial, sans-serif;
+}
+
+header {
+    border: 0.15rem solid #a0a0a0;
+    border-radius: 1rem 0 1rem 0;
+    background-image: url(./../assets/images/background.png);
+    width: 60%;
+    height: 30%;
+    margin: 1rem 0 1rem 1rem;
+    padding: 1rem;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav a:hover{
+    font-weight: bold;
+}
+
+header h1{
+    color: #114260;
+    font-family: moogalator, Arial, sans-serif;
+}
+
+h1{
+    text-transform: capitalize;
+}
+
+h2,
+h3{
+    text-transform: capitalize;
+}
+
+p{
+    text-align: justify;
+}
+
+main{
+    margin: 1rem;
+}
+
+main img{
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    margin-left: 1rem;
+}
+
+main h2{
+    font-size: 20px;
+}
+
+main section{
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+main section h2{
+    font-size: 20px;
+}
+
+main section ul{
+    margin-left: 2rem;
+}
+
+main article{
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+ main article h3{
+    margin-bottom: 0.5rem;
+}
+
+aside {
+    margin-left: 1rem;
+}
+
+aside section h3{
+    border-bottom: 0.5rem double #114260;
+    margin-right: 15%;
+    /* border-width: 100%; */
+}
+aside section ul{
+    list-style-image: url(./../assets/icons/skill-item.png);
+    margin: 1rem 1rem 1rem 3rem;
+}
+
+footer{
+    background-color: #114260;
+}
+
+footer span{
+    color: #c2c2c2;
+}
+
+article h3{
+    color: #801535;
+}
