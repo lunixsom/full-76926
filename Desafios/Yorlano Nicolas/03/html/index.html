@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="formulario del banco central">
+    <meta name="keywords" content="banco, central, banco central, Banco, Central, Banco central, Banco Central">
+    <meta name="author" content="Compañia banco central">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/png">
+    <title>Banco Central</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>banco central</h1>
+    </header>
+
+    <main>
+        <h2>Alta de cuenta bancaria</h2>
+
+        <section>
+
+            <form action="endpoint.js" method="post">
+
+                <div class="form-container">
+                    <label for="name">Nombre:</label>
+                    <div><input type="text" name="name-user" id="name" required minlength="2" maxlength="15"
+                            placeholder="Ingresa tu nombre"></div>
+                </div>
+
+                <div class="form-container">
+                    <label for="surname">Apellido:</label>
+                    <div><input type="text" name="surname-user" id="surname" required minlength="2" maxlength="15"
+                            placeholder="Ingresa tu apellido"></div>
+                </div>
+
+                <div class="form-container">
+                    <label for="age">Edad:</label>
+                    <div><input type="number" name="age-user" id="age" required min="1" max="100"
+                            placeholder="Ingresa tu edad"></div>
+                </div>
+
+                <div class="form-container">
+                    <label for="nationality">Nacionalidad:</label>
+                    <div>
+                        <select name="nationality-user" id="nationality" required multiple>
+                            <option value="argentina" s>Argentina</option>
+                            <option value="bolivia">Bolivia</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="paraguay">Paraguay</option>
+                            <option value="peru">Perú</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="venezuela">Venezuela</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <label for="marital-status1">Estado civil:</label>
+                    <div><input type="radio" name="marital-status-user" id="marital-status1" checked> Soltero</div>
+                    <div><input type="radio" name="marital-status-user" id="marital-status2"> Casado</div>
+                    <div><input type="radio" name="marital-status-user" id="marital-status3"> Divorciado</div>
+                    <div><input type="radio" name="marital-status-user" id="marital-status4"> Viudo</div>
+                </div>
+
+                <div class="form-container">
+                    <label for="email">Correo electrónico:</label>
+                    <div><input type="email" name="email-user" id="email" required minlength="10" maxlength="50"
+                            placeholder="Ingresa tu correo electronico"></div>
+                </div>
+
+                <div class="form-container">
+                    <label for="password">Contraseña:</label>
+                    <div><input type="password" name="password-user" id="password" required minlength="8" maxlength="16"
+                            placeholder="Ingresa una contraseña segura"></div>
+                </div>
+
+                <div class="form-container">
+                    <label for="type-account">Tipo de Cuenta:</label>
+                    <div>
+                        <select name="type-account-user" id="type-account" required>
+                            <option value="cuenta-ahorro">Cuenta de Ahorro</option>
+                            <option value="cuenta-corriente">Cuenta Corriente</option>
+                            <option value="cuenta-sueldo" selected>Cuenta Sueldo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <label for="additional-services1">Servicios Adicionales:</label>
+                    <div><input type="checkbox" name="additional-services-user" id="additional-services1"> Préstamo
+                        Personal</div>
+                    <div><input type="checkbox" name="additional-services-user" id="additional-services2"> Seguro de
+                        Vida
+                    </div>
+                    <div><input type="checkbox" name="additional-services-user" id="additional-services3"> Seguro de
+                        Automovil</div>
+                    <div><input type="checkbox" name="additional-services-user" id="additional-services4"> Tarjeta de
+                        Crédito Visa</div>
+                    <div><input type="checkbox" name="additional-services-user" id="additional-services5"> Tarjeta de
+                        Crédito Mastercard</div>
+                </div>
+
+                <div class="form-container">
+                    <label for="photo">Fotografía de perfil:</label>
+                    <div><input type="file" name="photo-user" id="photo" required accept="image/*"></div>
+                </div>
+
+                <div class="form-container">
+                    <label for="observations">Observaciones:</label>
+                    <div><textarea name="observations-user" id="observations" maxlength="250"
+                            placeholder="Ingresa tus observaciones (opcional)" rows="6"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <input type="submit" value="Enviar Información">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+@font-face {
+    font-family: BD_Bankwell;
+    src: url(../assets/font/BD_Bankwell.ttf)
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    list-style-position: inside;
+    @font-face {
+        font-family: DB_Bankwell;
+        src: url(../assets/font/DB_Bankwell);
+    }
+}
+body{
+    width: 70%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 10rem;
+    background-color: #f5f5f5;
+    
+        
+    }
+    header{
+       border: 1px black;
+       width: 100%;
+       height:8rem;
+       background-color: #171e72;
+       margin-bottom: 2rem;
+        }        
+ h1{
+     font-family: BD_Bankwell; 
+     text-align: center;
+     font-size: 4rem;
+     color: #f5f5f5;
+     text-transform: lowercase;
+     text-decoration: underline;
+     padding-top: 2rem;
+      }
+      main{
+      background-image: url(./image/vault.png);   
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      color: rgba(255, 255, 255, 0,85);
+      }
+     h2{
+        font: 2rem black;
+        font-weight: bolder;
+        font-family:Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+         }
+     form{
+        margin-top: 1rem;
+        width: 100%;
+        background-color: transparent;
+                        
+         }
+      label {
+              font-size: large;
+              color: #171e72;
+                }
+      
+      input[type=text],
+      input[type=email],
+      input[type=password],
+      input[type=number],
+      input[type=file], select {
+      border: none;
+      border-bottom: 3px solid #17181a;
+      background-color: transparent;
+      width: 70%;
+      margin-bottom: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+          }
+          input[type=text]:focus,
+          input[type=email]:focus,
+          input[type=password]:focus,
+          input[type=number ]:focus,
+          input[type=file]:focus {
+               outline: none;
+              border-bottom: 3px solid #171e72;
+                 }
+                 
+      #nacionality,
+      #account{
+         outline: none;
+         border-bottom: 1px solid #171e72;
+         margin-bottom: 1rem;
+         font-size: 2rem;
+      }
+      textarea{
+         width: 70%;
+      }
+    
+      input[type= submit]{
+                    border: 1 px solid bisque;
+                    width: 70%;
+                    margin-bottom: 1rem;
+                    }
+                    
+      footer{
+            background-color: #171e72;
+            border-radius: 0 0 4px 4px;
+            text-align: center;
+            height: 4rem;
+            padding-top: 1.25rem;
+            margin-bottom: 1rem;
+             }
+            footer span{
+                color: beige;
+                }
+        
+         

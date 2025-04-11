@@ -1,0 +1,156 @@
+/* TIPOGRAFIAS */
+@font-face{
+    font-family: BD Bankwell;
+    src: url("../assets/fonts/BD_Bankwell.ttf");
+}
+
+/* RESET DE ESTILOS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333333;
+    font-family: sans-serif;
+    font-size: 16px;
+    list-style-position: inside;
+}
+
+body{
+    padding: 1rem;
+    background-image: url("../assets/images/vault.png");
+    background-size: 50rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ebebeb;
+}
+
+/* ESTILOS DEL HEADER */
+header{
+    background-color: #0d0b90;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+header h1{
+    font-size: 5.5rem;
+    color: #f5f5f5;
+    font-family: BD Bankwell;
+    padding: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+/* ESTILOS DEL MAIN */
+main{
+    padding: 1rem;
+    background-color: rgba(255,255,255,0.7);
+}
+
+main h2{
+    text-transform: capitalize;
+    font-size: 1.9rem;
+    padding-bottom: 1rem;
+}
+
+form{
+    width: 40vw;
+}
+
+/* Representa cada caja del formulario */
+.form-container{
+    padding: 0.5rem 0;
+}
+
+.form-container label{
+    color: #0d0b90;
+    font-size: 1.1rem;
+}
+
+/* Estilos de los inputs */
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+input[type=submit],
+select,
+textarea{
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.1rem;
+}
+
+select[multiple]{
+    margin-top: 0.4rem;
+    padding: 0; 
+}
+
+option{
+    padding: 0.18rem 0;
+}
+
+input[type=radio],
+input[type=checkbox],
+input[type=file]{
+    margin-top: 0.4rem;
+}
+
+input[type=radio],
+input[type=checkbox]{
+    margin-left: 0.4rem
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=radio],
+input[type=submit],
+textarea,
+select{
+    border: none;
+    border-bottom: 1px solid #0d0b90;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=radio]:focus,
+input[type=submit]:focus,
+select:focus,
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=number]:hover,
+input[type=password]:hover,
+input[type=radio]:hover,
+input[type=submit]:hover,
+select:hover{
+    border: none;
+    border-bottom: 3px solid #0d0b90;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    border: 1px solid #0d0b90;
+}
+
+textarea:focus,
+textarea:hover{
+    border-bottom: 3px solid #0d0b90;
+    outline: none;
+}
+
+/* ESTILOS DEL FOOTER */
+footer{
+    background-color: #0d0b90;
+    border-radius: 0 0 0.6rem 0.6rem;
+}
+
+footer p{
+    color: #f5f5f5;
+    text-align: center;
+    padding: 1rem;
+}
+

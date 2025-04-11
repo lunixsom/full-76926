@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco central</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header class="wrapper___header">
+        <h1 class="header___title">Banco Central</h1>
+    </header>
+
+    <main>
+        <section class="section___form">
+
+            <form action='endpoint.js' method="POST">
+                <h2>Acta De Cuenta Bancaria</h2>
+
+                <div class="form___item">
+                    <input type="text" required minlength="2" maxlength="15" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="form___item">
+
+                    <input type="text" required minlength=" 2" maxlength="15" placeholder="Ingresa tu apellido">
+
+                </div>
+                <div class="form___item">
+
+                    <input type="number" required min="1" max="100" placeholder="Ingresa tu edad">
+
+                </div>
+
+                <div class="form___item">
+                    <input type="password" required minlength="8" maxlength="16" placeholder="Ingresa tu contraseña">
+                </div>
+
+                <div class="form___item">
+
+                    <h3>Eligue tu nacionalidad</h3>
+                    <select id="opciones" name="nacionalidades">
+                        <option selected>Argentina</option>
+                        <option>Brasil</option>
+                        <option>Chile</option>
+                        <option>Ecuador</option>
+                        <option>Paraguay</option>
+                        <option>Peru</option>
+                        <option>Uruguay</option>
+                        <option>Venezuela</option>
+                    </select>
+                </div>
+                <div class="form___item">
+                    <h3>Estado Civil</h3>
+
+                    <div class="radio___group">
+                        <input type="radio" id="soltero" name="estado_civil" value="soltero" checked>
+                        <label for="soltero">Soltero</label>
+                    </div>
+
+                    <div class="radio___group">
+                        <input type="radio" id="casado" name="estado_civil" value="casado">
+                        <label for="casado">Casado</label>
+                    </div>
+
+                    <div class="radio___group">
+                        <input type="radio" id="divorciado" name="estado_civil" value="divorciado">
+                        <label for="divorciado">Divorciado</label>
+                    </div>
+
+                    <div class="radio___group">
+                        <input type="radio" id="viudo" name="estado_civil" value="viudo">
+                        <label for="viudo">Viudo</label>
+                    </div>
+                </div>
+
+                <div class="form___item">
+                    <h3>Tipo de Cuenta</h3>
+
+                    <div class="radio___container">
+                        <input type="radio" id="ahorro" name="tipo_cuenta" value="ahorro">
+                        <label for="ahorro">Cuenta de Ahorro</label>
+                    </div>
+
+                    <div class="radio___container">
+                        <input type="radio" id="corriente" name="tipo_cuenta" value="corriente">
+                        <label for="corriente">Cuenta Corriente</label>
+                    </div>
+
+                    <div class="radio___container">
+                        <input type="radio" id="sueldo" name="tipo_cuenta" value="sueldo" checked>
+                        <label for="sueldo">Cuenta Sueldo</label>
+                    </div>
+                </div>
+
+                <div class="form___item">
+                    <h3>Servicios adicionales</h3>
+
+                    <div class="checkbox___container">
+                        <input type="checkbox" id="prestamo" name="servicios[]" value="prestamo">
+                        <label for="prestamo">Préstamo Personal</label>
+                    </div>
+
+                    <div class="checkbox___container">
+                        <input type="checkbox" id="seguro_vida" name="servicios[]" value="seguro_vida">
+                        <label for="seguro_vida">Seguro de Vida</label>
+                    </div>
+
+                    <div class="checkbox___container">
+                        <input type="checkbox" id="seguro_auto" name="servicios[]" value="seguro_auto">
+                        <label for="seguro_auto">Seguro de Automóvil</label>
+                    </div>
+
+                    <div class="checkbox___container">
+                        <input type="checkbox" id="visa" name="servicios[]" value="visa">
+                        <label for="visa">Tarjeta de Crédito Visa</label>
+                    </div>
+
+                    <div class="checkbox___container">
+                        <input type="checkbox" id="mastercard" name="servicios[]" value="mastercard">
+                        <label for="mastercard">Tarjeta de Crédito Mastercard</label>
+                    </div>
+                </div>
+
+                <div class="form___item">
+                    <h2>Subir Foto</h2>
+                    <label for="file-upload" class="file___label">
+                        <i class="fa-solid fa-camera"></i>
+                    </label>
+                    <span id="fileName">Ningún archivo seleccionado</span>
+                    <input type="file" id="file-upload" class="file___input" accept="image/*">
+                </div>
+
+                <div class="form___item">
+                    <h3>Observaciones</h3>
+                    <textarea id="observaciones" name="observaciones" maxlength="250"
+                        placeholder="Ingresa tus observaciones (opcional)"
+                        style="resize: none; width: 95%; height: 100px;"></textarea>
+                </div>
+
+
+                <div class="form___item">
+
+                    <button type="submit">Enviar formulario</button>
+
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer class="wrapper___footer">
+        <p>&copy; 2025 Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

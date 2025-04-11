@@ -1,0 +1,210 @@
+*{
+    font-family: "Roboto"; 
+}
+
+
+body {
+   
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    background: url('aseets/images/pexels-robertkso-17232504.jpg') no-repeat center center/cover; 
+
+}
+
+
+body::before {
+    content: "";
+position: fixed;
+    width: 100vw;
+    height: 100%;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+
+
+.wrapper___header {
+   
+    height: 80px;
+background-color: #0F1C14;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px 0;
+
+}
+
+.header___title{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+main {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.wrapper___footer {
+    height: 80px;
+    background-color: #0F1C14;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+
+.section___form {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.form___item {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+   padding: 20px;
+    flex-direction: column;
+}
+
+.checkbox___container{
+width: 100%;
+padding: 10px;
+display: flex;
+flex-direction: row-reverse;
+justify-content: start;
+align-items: center;
+}
+
+.radio___container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   flex-direction: row-reverse;
+   
+}
+
+.radio___container  input, label{
+width: 50%;
+
+}
+
+.radio___container label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.radio___container input {
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.radio___group {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px; /* Espacio entre radio y label */
+    margin-bottom: 8px;
+}
+
+.radio___group label{
+    font-size: 20px;
+}
+.radio___group input{
+    width: 20px;
+    height: 20px;
+}
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #5e8c6f;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #37493d;
+}
+
+.checkbox___container > label {
+    width: 50%;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.checkbox___container > input {
+   
+    width: 20px;
+    height: 20px;
+}
+h2{
+    font-size: 35px;
+    color: #1a5a31;
+}
+
+.wrapper___footer p {
+font-size: 25px;
+}
+
+h3{
+    font-size: 30px;
+    color: #5e8c6f;
+}
+
+.file___input {
+    display: none; 
+}
+
+.file___label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5e8c6f;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 30%;
+    transition: background 0.3s ease;
+}
+
+.file___label:hover {
+    background-color: #37493d;
+}
+
+.file___label i {
+    font-size: 22px; 
+}
+
+#fileName {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #1a5a31;
+}

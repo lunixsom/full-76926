@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Central</title>
+    <link rel="icon" href="./assets/icon/favicon.png">
+    <link rel="stylesheet" href="../F1-N03/assets/main.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Banco Central</h1>
+    </header>
+    <main>
+        <h2>Alta de cuenta bancaria</h2>
+        <section>
+            <form action="endpoint.js" method="post">
+                <div class="label">
+                    <label for="id-name"> Nombre</label></br>
+                    <input type="text" name="name" id="id-name" minlength="2" maxlength="15" required
+                        placeholder="Ingresa tu nombre">
+                </div>
+                <div class="dato">
+                    <label for="id-surname">Apellido</label></br>
+                    <input type="text" name="surname" id="id-surname" minlength="2" maxlength="15" required
+                        placeholder="Ingresa tu apellido">
+                </div>
+                <div class="dato">
+                    <label for="id-age"> Edad</label></br>
+                    <input type="number" name="age" id="id-age" min="1" max="100" required
+                        placeholder="Ingresa tu edad">
+                </div>
+                <div class="dato">
+                    <label for="id-nationality"> Nacionalidad</label></br>
+                    <select name="nationality" id="id-nationality" multiple>
+                        <option value="Arg" selected>ARGENTINA</option>
+                        <option value="Bol">Bolivia</option>
+                        <option value="Bra">Brasil</option>
+                        <option value="Chil">Chile</option>
+                        <option value="Col">Colombia</option>
+                        <option value="Ecu">Ecuador</option>
+                        <option value="Par">Paraguay</option>
+                        <option value="Per">Peru</option>
+                        <option value="Uru">Uruguay</option>
+                        <option value="Ven">Venezuela</option>
+                    </select>
+                </div>
+                <div class="dato">
+                    <label for="id-civil-status"> Estado Civil</label></br>
+                    <input type="radio" name="civil-status" id="id-civil-status0" value="0" required checked>SOLTERO
+                    <br>
+                    <input type="radio" name="civil-status" id="id-civil-status1" value="1">CASADO <br>
+                    <input type="radio" name="civil-status" id="id-civil-status2" value="2">DIVORCIADO <br>
+                    <input type="radio" name="civil-status" id="id-civil-status3" value="3">VIUDO <br>
+                </div>
+                <div class="dato">
+                    <label for="id-email"> Correo electrónico</label></br>
+                    <input type="email" name="email" id="id-email" minlength="10" maxlength="50" required
+                        placeholder="Ingresa tu correo electrónico">
+                </div>
+                <div class="dato">
+                    <label for="password"> Contraseña</label></br>
+                    <input type="password" name="password" id="id-password" minlength="8" maxlength="16" required
+                        placeholder="Ingresa tu contraseña segura">
+                </div>
+                <div class="dato">
+                    <label for="id-account"> Tipo de cuenta</label></br>
+                    <select name="account" id="id-account" required>
+                        <option value="CA">Cuenta de Ahorro</option>
+                        <option value="CC">Cuenta Corriente</option>
+                        <option value="CS" selected>Cuenta Sueldo</option>
+                    </select>
+                </div>
+                <div class="dato">
+                    <label for="id-aditional"> Servicios adicionles</label></br>
+                    <input type="checkbox" name="adicionles1" id="id-aditional1" multiple> Prestamo Personal </br>
+                    <input type="checkbox" name="adicionles2" id="id-aditional2" multiple> Seguro de Vida </br>
+                    <input type="checkbox" name="adicionles3" id="id-aditional3" multiple> Seguro de Automovil </br>
+                    <input type="checkbox" name="adicionles4" id="id-aditional4" multiple> Tarjeta de Credito Visa </br>
+                    <input type="checkbox" name="adicionles5" id="id-aditional5" multiple> Tarjeta de Credito
+                    MasterCard </br>
+                </div>
+                <div class="dato">
+                    <label for="id-photo"> Fotografia de perfil</label></br>
+                    <input type="file" name="photo" id="id-photo" accept="image/*">
+                </div>
+                <div class="dato">
+                    <label for="observations"> Observaciones:</label></br>
+                    <textarea name="observations" id="id-observations" rows="5" cols="50" maxlength="250"
+                        placeholder="Ingresa tus observaciones (opcional)"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Informacion">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span>&copy;2025 Todos los derechos reservados</span>
+    </footer>
+
+</body>
+
+
+</html>
