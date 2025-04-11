@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es-ARG">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Banco Central</title>
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="../asset/icon/favicon.png"type="imagen/png">
+</head>
+
+<body>
+    <header>
+        <H1>banco central</H1>
+        <H2>alta de cuenta bancaria</H2>
+    </header>
+        <main>
+            <section> 
+                <form action="endpoint.js" method="post" id="demo-form">
+
+                    <div class="form-group">
+                        <label for="id-name">Nombre:</label><br>
+                        <input type="text" name=name id="id-name" minlength="2" maxlength="15"required
+                        placeholder="INGRESA TU NOMBRE" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id-surname">Apellido:</label><br>
+                        <input type="text" id="id-surname" name="apellido" minlength="2"maxlength="15"required
+                        placeholder="INGRESA TU APELLIDO">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id-age">Edad:</label><br>
+                        <input type="number"id="id-age"name="Edad"min="1" max="100"
+                        placeholder="INGRESA TU EDAD">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id-nationality">Nacionalidad</label><br>
+                            <select name="nationality" id="id-nationality"multiple class="form-group1">
+                                <option value="Argentina"selected>ARGENTINA</option>
+                                <option value="BOLIVIA">BOLIVIA</option>
+                                <option value="BRASIL">BRASIL</option>
+                                <option value="CHILE">CHILE</option>
+                                <option value="COLOMBIA">COLOMBIA</option>
+                                <option value="ECUADOR">ECUADOR</option>
+                                <option value="PARAGUAY">PARAGUAY</option>
+                                <option value="PERU">PERU</option>
+                                <option value="URUGUAY">URUGUAY</option>
+                                <option value="VENEZUELA">VENEZUELA</option>
+                            </select>
+                        </div>   
+                            <div class="form-group" >
+                                <label for="id-marital-status0">seleccciona tu estado civil</label><br>
+                                <input type="radio"name="id-marital-status" id="id-marital-status0" value="0" checked>SOLTERO<br>
+                                <input type="radio"name="id-marital-status" id="id-marital-status1" value="1">CASADO<br>
+                                <input type="radio"name="id-marital-status" id="id-marital-status2" value="2">DIVORCIADO<br>
+                                <input type="radio"name="id-marital-status" id="id-marital-status3" value="3">VIUDO<br>
+                        </div>
+                        <div class="form-group">
+                                <label for="id-email">correo electronico:</label><br>
+                                <input type="email" name="id-email"id="id-email" minlength="10"maxlength="50"required
+                            placeholder="INGRESA TU CORREO ELECTRONICO" >
+                        </div>
+                        <div class="form-group">
+                                <label for="id-password">contraseña:</label><br>
+                                <input type="password" name="password"id="id-password"minlength="8" maxlength="16"
+                                placeholder="INGRESE CONTRASEÑA SEGURA" >
+                        </div>
+
+                        <div class="form-group1">
+                            <label for="id-account">tipo de cuenta</label><br>
+                                <select name="tIPO DE CUENTA" id="id-account" class="form-group">
+                                    <option value="cuenta sueldo"selected>cuenta sueldo</option>
+                                    <option value="cuenta corriente">cuenta corriente</option>
+                                    <option value="cuenta ahorro">cuenta ahorro</option>
+                                </select> 
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Servicios Adicionales1">Servicios Adicionales: </label><br>
+                            <input type="checkbox"name="preferences1" id="Servicios Adicionales1">Prestamo Personal <br>
+                            <input type="checkbox"name="preferences2" id="Servicios Adicionales2">Seguro de Vida <br>
+                            <input type="checkbox"name="preferences3" id="Servicios Adicionales3">Seguro del Automovil<br>
+                            <input type="checkbox"name="preferences4" id="Servicios Adicionales4">Tarjeta de Credito Visa <br>
+                            <input type="checkbox"name="preferences5" id="Servicios Adicionales5">Tarjeta de Credito Mastercard<br>
+                        </div>
+
+                        <div class="form-group"><label for="id-photo">fotografia del perfil</label><br>
+                            <input type="file" name="id-photo" id="id-photo" accept="imagen/*">
+                        </div>
+
+                        <div class="form-group"> 
+                            <label for="id-observations">observaciones</label><br>
+                                <textarea name="observations" id="id-observations"cols="25" raw="10" maxlength="250"
+                                placeholder="INGRESE SUS OBSERVACIONES (opcional)"></textarea>
+                        </div>                      
+
+                        <div class="form-group">
+                            <input type="submit" value="ENVIAR INFORMACION">
+                        </div>
+            </form>
+        </section>
+    </main>
+<footer>
+    <SPan>&COPY; Todos los Derechos Reservados</SPan>
+</footer>
+</body>
+</html>

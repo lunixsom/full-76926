@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'BD_Bankwell';
+    src: url("../assets/fonts/BD_Bankwell.ttf") format("truetype");
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #0d0b90;
+}
+
+header {
+    margin: 1rem 1rem 0 1rem;
+    padding: 1rem;
+    background-color: #0d0b90;
+    border-radius: 1rem 1rem 0 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    background-image: url(../assets/images/vault.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-family:'BD_Bankwell';
+    color: #f5f5f5;
+    font-size: 5rem;
+    text-align: center;
+    border-radius: 20%;
+}
+h2 {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+}
+div {
+    margin-top: 0.5rem;
+}
+
+main {
+    margin: 0 1rem 0 1rem;
+    padding: 1rem;
+    background-color: rgba(226, 233, 248, 0.826);
+}
+label {
+    display:block;
+    margin-top: 0.1rem;
+}
+
+input {
+    display: block;
+    width: 50%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: gray;
+}
+
+input:hover {
+    border-color: blue;
+}
+
+select, textarea {
+    display: block;
+    width: 50%;
+}
+
+textarea {
+    height: 5rem;
+}
+
+.estadocivil * {
+    display: inline;
+    width: 2%;
+
+}
+.servicios * {
+    display: inline;
+    width: 2%;
+}
+
+.selector  {
+    display: inline;
+}
+
+#boton {
+    border: 1px;
+    background-color: grey;
+    border-radius: 1px;
+    height: 2rem;
+}
+
+div .grupo-formulario {
+    margin: 0.5rem;
+}
+
+footer {    
+    margin: 0 1rem 1rem 1rem;
+    padding: 1rem;
+    background-color: #0d0b90;
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;
+}
+
+footer span {
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+
+
+

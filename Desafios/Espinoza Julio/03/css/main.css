@@ -1,0 +1,121 @@
+
+@font-face {
+font-family:bankwell;
+src: url(../asset/font/bankwell.ttf)}
+
+*{
+font-size: 1rem;
+padding: 0%;
+box-sizing: border-box;
+list-style-position: inside;}
+
+h1{
+font-family: bankwell;
+font-style: oblique;
+text-transform: capitalize;
+width: 100%;
+border-radius:30px 30px 0px 0px;
+margin-top: 1%;
+text-align: center;
+text-decoration: underline;
+background-color:#0d0b90;
+color: #F5F5F5;
+padding: 2%;
+margin-bottom: 1%;
+font-size:8rem ;}
+
+h2{text-transform: capitalize;  
+color: black;
+padding-left: 0.3%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.5rem;}
+
+body{
+margin-top:-10px;
+padding: 1rem;
+color: #f5f5f5;
+background-image: url(../asset/imagen/vault.png); 
+background-color:rgba(0, 0, 0,0.1);
+background-size: 100%;
+background-repeat: no-repeat;
+background-size:50%;
+background-position: center;
+background-position-y: 100%;}
+/* no se como  hacer para que quede mas trasnparente la imagen*/
+#demo-form{
+background-color:rgba(0,0, 0, 0.2);
+padding: 1%;}
+
+.form-group{
+color: #0d0b90;
+text-transform:capitalize;
+background-color: transparent;
+border-bottom: 1px solid #0e0e0f;
+border: none;
+font-size: 1rem; 
+padding: 2px;
+width: 40rem;
+margin: 4px 0;}
+
+:checked { color: #0e0e0f}
+
+.form-group1
+{color: #0d0b90;
+outline: none;
+background:transparent;
+border: none;
+border-bottom:1px solid #0e0e0f;
+text-transform:uppercase ;
+font-size: 1rem; 
+padding: 2px;
+width: 40rem;
+margin: 4px 0;}
+
+input[type=password],
+input[type=text],
+input[type=number],
+input[type=edad],
+input[type=email],
+input[type=file],
+input[type=account]
+{border: none;
+padding: 1%;
+border-bottom: 1px solid #0e0e0f;
+background-color: transparent;
+width: 100%;}
+
+input[type=password]:focus,
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=edad]:focus,
+input[type=email]:focus,
+input[type=file]:focus,
+input[type=account]:focus
+{
+outline: none;
+border: none;
+border-bottom: 1px solid #0e0e0f;
+background-color: transparent;
+width: 100%;}
+
+textarea{
+resize:none ;
+outline: none;
+border: 1px solid #0e0e0f;
+background: transparent;
+width: 100% ;
+max-height: 200px;
+min-height: 100px;}
+/*busque las propiedades de max-height y min height.Si no  no me quedaba bien*/
+footer
+{color: #F5F5F5;
+width: 100%;
+text-align: center;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 1.5rem;
+background-color:#0d0b90;
+padding: 0.8%;}
+
+input[type=submit]{padding: 2px;
+border: 1px solid #0e0e0f;
+width: 100%;}

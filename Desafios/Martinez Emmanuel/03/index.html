@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="favicon.png">
+    <title>Banco Central</title>
+</head>
+<body>
+    <header>
+        <h1>Banco Central</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Alta De Cuenta Bancaria</h2>
+            <form id="bank-form" action="endpoint.js" method="post">
+
+                <div class="form-group">
+                    <label for="id-name">Nombre:</label>
+                    <div>
+                        <input type="text" name="name" id="id-name" minlength="2" maxlength="15" placeholder="Ingresa tu nombre" requiered>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-lastname">Apellido:</label>
+                    <div>
+                        <input type="text" name="lastname" id="id-lastname" minlength="2" maxlength="15" placeholder="Ingresa tu apellido" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-age">Edad:</label>
+                    <div>
+                        <input type="number" name="age" id="id-age" min="1" max="100" placeholder="Ingresa tu edad" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-nationality">Selecciona tu Nacionalidad:</label>
+                    <div>
+                        <select name="nationality" id="id-nationality" multiple>
+                            <option value="ARG" selected>ARGENTINA</option>
+                            <option value="BOL">BOLIVIA</option>
+                            <option value="BRA">BRASIL</option>
+                            <option value="CHI">CHILE</option>
+                            <option value="COL">COLOMBIA</option>
+                            <option value="ECU">ECUADOR</option>
+                            <option value="PAR">PARAGUAY</option>
+                            <option value="PER">PERÚ</option>
+                            <option value="URU">URUGUAY</option>
+                            <option value="VEN">VENEZUELA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-civil-status0">Selecciona tu Estado Civil:</label>
+                    <div>
+                        <div>
+                            <input type="radio" name="civil-status" id="id-civil-status0" value="0" checked>Soltero
+                        </div>
+                        <div>
+                            <input type="radio" name="civil-status" id="id-civil-status1" value="1">Casado
+                        </div>
+                        <div>
+                            <input type="radio" name="civil-status" id="id-civil-status2" value="2">Divorciado
+                        </div>
+                        <div>
+                            <input type="radio" name="civil-status" id="id-civil-status3" value="3">Viudo
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-email">Correo Electrónico:</label>
+                    <div>
+                        <input type="email" name="email" id="id-email" minlength="10" maxlength="50" placeholder="Ingresa tu correo electrónico" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-password">Contraseña:</label>
+                    <div>
+                        <input type="password" name="password" id="id-password" minlength="8" maxlength="16" placeholder="Ingresa una contraseña segura" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-account-type">Tipo de Cuenta:</label>
+                    <div>
+                        <select name="account-type" id="id-account-type">
+                            <option value="0">Cuenta de Ahorro</option>
+                            <option value="1">Cuenta Corriente</option>
+                            <option value="2" selected>Cuenta Sueldo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-additional-service0">Servicios Adicionales:</label>
+                    <div>
+                        <input type="checkbox" name="additional-service0" id="id-additional-service0">Préstamo Personal
+                    </div>
+                    <div>
+                        <input type="checkbox" name="additional-service1" id="id-additional-service1">Seguro de Vida
+                    </div>
+                    <div>
+                        <input type="checkbox" name="additional-service2" id="id-additional-service2">Seguro de Automóvil
+                    </div>
+                    <div>
+                        <input type="checkbox" name="additional-service3" id="id-additional-service3">Tarjeta de Crédito Visa
+                    </div>
+                    <div>
+                        <input type="checkbox" name="additional-service4" id="id-additional-service4">Tarjeta de Crédito Mastercard
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-photo">Fotografía de perfil:</label>
+                    <div>
+                        <input type="file" name="photo" id="id-photo" accept="image/*" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-observations">Observaciones:</label>
+                    <div>
+                        <textarea name="observations" id="id-observations" maxlength="250" cols="50" rows="10" placeholder="Ingresa tus observaciones"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input  class="buttom" type="submit" value="Enviar Información">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
