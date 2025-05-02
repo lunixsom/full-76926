@@ -1,0 +1,128 @@
+/* Importa una fuente de Google llamada 'Dancing Script' con pesos de 400 a 700 */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* Importa una fuente local llamada 'Drafting' en formato TrueType */
+@font-face {
+    font-family: 'Drafting';
+    src: url("../assets/fonts/drafting.ttf") format("truetype");
+}
+
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333333;
+    font-size: 16px;
+
+    /* Establece la fuente "Arial" o una fuente sans-serif genérica como respaldo */
+    font-family: Arial, sans-serif;
+
+    /* Define la posición de los símbolos de las listas */
+    list-style-position: inside;
+}
+
+/* Estilos para el cuerpo del documento "body" */
+body {
+    width: 30rem;
+    padding: 1rem;
+}
+
+header nav li {
+    list-style-type: none;
+}
+
+/* Selector descendente - Estilos para párrafos "p" (dirección) */
+main section div p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+main section ul li {
+    list-style-image: url("../assets/icons/star.png");
+}
+
+main section img {
+    width: 28rem;
+    margin: 1rem 0;
+    border: 3px solid blue;
+    border-radius: 1rem 0.5rem 2rem 5rem;
+}
+
+main section article a img {
+    height: 448px;
+    width: 100%;
+    margin: 1rem 0;
+    border: 7px double black;
+    border-radius: 50%;
+}
+
+main section article ol li {
+    list-style-type: upper-roman;
+}
+
+/* Uso de bordes y fondo para contenedor */
+aside {
+    border: 1px dotted brown;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-image: url("../assets/images/background.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+footer {
+    padding: 1rem;
+    background-color: beige;
+    text-align: center;
+}
+
+/* Estilos para títulos "h1" */
+h1 {
+    font-family: 'Drafting';
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    color: blue;
+}
+
+/* Estilos para títulos "h2" */
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: green;
+}
+
+/* Estilos para títulos "h3" */
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: italic;
+    text-transform: capitalize;
+    color: red;
+}
+
+/* Selector Grupal - Estilos para títulos "h2" y "h3" */
+h2,
+h3 {
+    text-transform: capitalize;
+}
+
+/* Estilos para párrafos "p" */
+p {
+    text-align: justify;
+}
+
+/* Estilos para vínculos "a" */
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+/* Estilos para vínculos "a" para cuando pasa el mouse por encima */
+a:hover {
+    background-color: aqua;
+}

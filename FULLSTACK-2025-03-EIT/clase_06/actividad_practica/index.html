@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack Engineer" />
+    <meta name="keywords" content="bootcamp, full stack, desarrollo web, HTML, CSS, JavaScript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+
+    <title>Explorando CSS</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <h1>Explorando CSS: estilos y selectores</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="endpoint.js" method="post" id="demo-form">
+                <div class="form-group">
+                    <label for="id-fullname">Nombre y Apellido</label>
+                    <input type="text" name="fullname" id="id-fullname" minlength="5" maxlength="35" required
+                        placeholder="Ingresa tu nombre completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="id-email">Correo Electrónico</label>
+                    <input type="email" name="email" id="id-email" minlength="10" maxlength="50" required
+                        placeholder="Ingresa tu correo electrónico">
+                </div>
+
+                <div class="form-group">
+                    <label for="id-password">Contraseña</label>
+                    <input type="password" name="password" id="id-password" minlength="8" maxlength="12" required
+                        placeholder="Ingresa una contraseña segura">
+                </div>
+
+                <div class="form-group">
+                    <label for="id-age">Edad</label>
+                    <input type="number" name="age" id="id-age" min="1" max="100" step="1" required
+                        placeholder="Ingresa una contraseña segura">
+                </div>
+
+                <div class="form-group">
+                    <textarea name="comment" id="id-comment" maxlength="150" rows="3" cols="3"
+                        placeholder="Ingresa tus comentarios"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Enviar Información">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

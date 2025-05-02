@@ -1,0 +1,72 @@
+/* Importa una fuente de Google llamada 'Dancing Script' con pesos de 400 a 700 */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* Importa una fuente local llamada 'Drafting' en formato TrueType */
+@font-face {
+    font-family: 'Drafting';
+    src: url("../assets/fonts/drafting.ttf") format("truetype");
+}
+
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333333;
+    font-size: 16px;
+
+    /* Establece la fuente "Arial" o una fuente sans-serif genérica como respaldo */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el cuerpo del documento "body" */
+body {
+    width: 30rem;
+    padding: 1rem;
+}
+
+/* Selector descendente - Estilos para párrafos "p" (dirección) */
+main section div p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer {
+    padding: 1rem;
+    background-color: beige;
+    text-align: center;
+}
+
+/* Estilos para títulos "h1" */
+h1 {
+    font-family: 'Drafting';
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    color: blue;
+}
+
+/* Estilos para títulos "h2" */
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: green;
+}
+
+/* Estilos para títulos "h3" */
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: red;
+}
+
+/* Selector Grupal - Estilos para títulos "h2" y "h3" */
+h2,
+h3 {
+    text-transform: capitalize;
+}
+
+/* Estilos para párrafos "p" */
+p {
+    text-align: justify;
+}

@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #333333;
+    list-style-position: inside;
+}
+
+body {
+    padding: 1rem;
+}
+
+footer {
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: beige;
+}
+
+.div-1,
+.div-3,
+.div-5 {
+    background-color: brown;
+}
+
+.div-4,
+.div-6,
+.div-7 {
+    background-color: orange;
+}
+
+.div-2,
+.div-7 {
+    background-color: gray;
+}
+
+.div-1,
+.div-2,
+.div-3,
+.div-4,
+.div-5,
+.div-6,
+.div-7 {
+    height: 200px;
+    width: 450px;
+}
+
+@media (max-width: 1024px) {
+
+    .div-1,
+    .div-2,
+    .div-3,
+    .div-4,
+    .div-5,
+    .div-6,
+    .div-7 {
+        width: 32%;
+        background-color: lightskyblue;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .div-1,
+    .div-2,
+    .div-3,
+    .div-4,
+    .div-5,
+    .div-6,
+    .div-7 {
+        height: 250px;
+        width: 48%;
+        background-color: lightseagreen;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .div-1,
+    .div-2,
+    .div-3,
+    .div-4,
+    .div-5,
+    .div-6,
+    .div-7 {
+        height: 300px;
+        width: 100%;
+        background-color: lightcoral;
+    }
+}

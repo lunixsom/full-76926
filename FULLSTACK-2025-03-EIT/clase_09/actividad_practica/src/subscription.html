@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack Engineer" />
+    <meta name="keywords" content="bootcamp, full stack, desarrollo web, HTML, CSS, JavaScript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+
+    <title>The Devs Band</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <h1>The Devs Band</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./subscription.html">Suscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="subscription">
+            <h2>Suscripción</h2>
+            <form action="endpoint" method="post">
+                <div>
+                    <label for="id-name">Nombre</label>
+                    <input type="text" name="name" id="id-name" placeholder="Ingresa tu nombre">
+                </div>
+                <div>
+                    <label for="id-surname">Apellido</label>
+                    <input type="text" name="surname" id="id-surname" placeholder="Ingresa tu apellido">
+                </div>
+                <div>
+                    <label for="id-observation">Observaciones</label>
+                    <textarea name="observation" id="id-observation" rows="10" cols="60" maxlength="600"></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

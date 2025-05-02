@@ -1,0 +1,80 @@
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333333;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 1rem;
+}
+
+header {
+    padding-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+form {
+    width: fit-content;
+    max-width: max-content;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background-color: #e1bee7;
+    border: 3px groove;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    background-color: #f3e5f5;
+    border: 1px solid #4a148c;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+input[type=file] {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+
+input[type=submit] {
+    width: 100%;
+    min-width: max-content;
+    color: white;
+    background-color: #7b1fa2;
+}
+
+textarea {
+    /* Esta propiedad impide cambiar el tamaño del area */
+    resize: none;
+}
+
+footer {
+    padding: 1rem;
+    background-color: beige;
+    text-align: center;
+}
