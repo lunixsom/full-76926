@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #333333;
+    list-style-position: inside;
+}
+
+h1 {
+    font-size: 2.25rem;
+    padding: 1.5rem 0.5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    padding: 0 0.5rem
+}
+
+ul {
+    padding: 1rem 2rem;
+}
+
+li {
+    padding: 0.15rem;
+}
+
+footer {
+    padding: 0 0.5rem;
+}
