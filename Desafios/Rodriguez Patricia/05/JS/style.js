@@ -48,8 +48,8 @@ switch (tipoDeViaje){
  else{totalGastos > maxGastos,
     window.alert("¡Atención! Tus gastos fueron muy elevados");
  }
+ let masGastos= window.confirm("¿Quieres calcular los gastos de otro viaje? (Aceptar= Sí / Cancelar= No");
  do{      
-  let masGastos= window.confirm("¿Quieres calcular los gastos de otro viaje? (Aceptar= Sí / Cancelar= No");
   if(masGastos== false){
     window.alert("¡Gracias por usar el sistema de control de gastos!");
     break;
