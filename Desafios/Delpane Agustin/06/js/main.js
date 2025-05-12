@@ -40,7 +40,7 @@ function displayResults(prodList, container) {
     for (let i = 0; i < prodList.length; i++) {
         let type = prodList[i][0]
         let totalWeight = calculateTotalWeight(prodList[i][1], prodList[i][2])
-        let totalCost = calculateCost(totalWeight)
+        let totalCost = calculateCost(type,totalWeight)
         const result = "<li>El envio " + (i + 1) + " es de tipo " + type + ", pesa " + totalWeight + "kg y el costo de envio es $" + totalCost +  "</li>";
         container.innerHTML += result
     }

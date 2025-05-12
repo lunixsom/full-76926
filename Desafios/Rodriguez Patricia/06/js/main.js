@@ -31,17 +31,17 @@ function calculateCost(type, totalWeight) {
 
     }
     
-    function displayResults() {
-        for(let i= 0; i< Envios.length; i++){
-            const Envios= Envios [i];
-            const type= Envios [0];
-            const unit= Envios[1];
-            const weight= Envios [2];
+    function displayResults(array11) {
+        for(let i= 0; i< array11.length; i++){
+            const Envios2= array11[i];
+            const type= Envios2[0];
+            const unit= Envios2[1];
+            const weight= Envios2[2];
             const totalWeight= calculateTotalWeight(unit, weight);
-            const deliveryCost= calculateCost(totalWeight);
+            const deliveryCost= calculateCost(type,totalWeight);
             const result= "<li>El envio "+[i+1]+ " es de tipo "+ type + ", pesa "+ totalWeight + " kg y el costo del envío es de $ "+ deliveryCost +".</li>";
-            resultContainer.innerhtml += result;
+            resultContainer.innerHTML += result;
         }
     }
-    displayResults();
+    displayResults(Envios);
 
