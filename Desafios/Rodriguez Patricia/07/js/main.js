@@ -37,10 +37,10 @@ const quantityGuestsInfoCanceled= calculateCounter(CANCELED);
 const quantityGuestsInfoConfirmed= calculateCounter(CONFIRMED);
 counterTotalContainer.appendChild(displayCounters(quantityGuestsInfoPending, quantityGuestsInfoCanceled, quantityGuestsInfoConfirmed));
 
-const createCardGuestInfo= (fullName, roomType, roomNumber, chekIndate, passportNumber, status, isVip) =>{
+const createCardGuestInfo= (fullName, roomType, roomNumber, chekIndate, passportNumber, status, dataVip) =>{
     const cardGuestInfo = document.createElement("div");
     cardGuestInfo.classList.add("guest");
-    cardGuestInfo.classList.add(`guest - ${ status.toLowerCase()}`);
+    cardGuestInfo.classList.add(`guest-${ status.toLowerCase()}`);
     const cardGuestInfoData= document.createElement("div");
     cardGuestInfoData.innerHTML += `<p><strong>Huestped:</strong>${fullName}<strong>Pasaporte N°:</strong>${passportNumber}</p>`;
     cardGuestInfoData.innerHTML += `<p><strong>Habitación: </strong>${roomType} N°: ${roomNumber}</p>`;
@@ -52,9 +52,20 @@ const createCardGuestInfo= (fullName, roomType, roomNumber, chekIndate, passport
 
 const roomImage = document.createElement("img");
 roomImage.setAttribute("src", `assets/images/${roomType.toLowerCase()}.jpg`);
+
+  if(dataVip === true){
+        const cardDataVip = document.createElement("div");
+        cardDataVip.innerHTML += `<p><strong>VIP</strong></p>`;
+        cardDataVip.classList.add("reservation-vip");
+        cardGuestInfo.appendChild(cardDataVip);
+    };
+    
+
 cardGuestInfo.appendChild(roomImage);
 return cardGuestInfo;
 };
+
+
 const createGuestsInfoContainer = () => {
 const guestsInfoContainer = document.getElementById("guestsInfo-container");
 
@@ -67,32 +78,32 @@ const guestsInfoContainer = document.getElementById("guestsInfo-container");
    const status = guestInfo[5];
    const dataVip = guestInfo[6];
 
-    if(dataVip === true){
+/*     if(dataVip === true){
         const cardDataVip = document.createElement("div");
         cardDataVip.innerHTML += `<p><strong>VIP</strong></p>`;
         cardDataVip.classList.add("reservation-vip");
         cardGuestInfo.appendChild(cardDataVip);
-
-    };
+    }; */
     
     switch(status){
         case PENDING:
-              card.classList.add("guest-card-pending");
+              guestsInfoContainer.classList.add("guest-card-pending");
         break;
         case CANCELED:
-            card.classList.add("guest-card-canceled");
+            guestsInfoContainer.classList.add("guest-card-canceled");
         break;
         case CONFIRMED:
-            card.classList.add("guest-card-confirmed");
+            guestsInfoContainer.classList.add("guest-card-confirmed");
         break;
     };
    
+    const cardGuestInfo = createCardGuestInfo(fullName, roomType, roomNumber, chekIndate, passportNumber, status, dataVip);
+    guestsInfoContainer.appendChild(cardGuestInfo);
   });
 
-const cardGuestInfo = createCardGuestInfo(fullName, roomType, roomNumber, chekIndate, passportNumber, status, isVip);
 
-guestsInfoContainer.appendChild(display(cardGuestInfo));
 };
 
 
 
+createGuestsInfoContainer()

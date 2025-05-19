@@ -3,3 +3,42 @@
 
 * falto mayusucula en toLowerCase y los parentesis al final
 
+
+
+* En el switch en lugar de card iría "guestsInfoContainer".
+
+* las líneas:
+
+    const cardGuestInfo = createCardGuestInfo(fullName, roomType, roomNumber, chekIndate, passportNumber, status, isVip);
+    guestsInfoContainer.appendChild(cardGuestInfo);
+
+ vas a necesitar meterlas adentro del forEach que evalúa cada card, ya que una vez que tenes todos los datos necesarios (fullName, roomType, etc ..) llamas a la función "createCardGuestInfo" que genera la card individualmente con sus datos para luego hacer appendChild al contenedor de cards.
+
+* Faltaria cambiar el nombre de la variable isVip por dataVip en las líneas 40 y 100 y el segmento de código siguiente:
+
+	  if(dataVip === true){
+        const cardDataVip = document.createElement("div");
+        cardDataVip.innerHTML += `<p><strong>VIP</strong></p>`;
+        cardDataVip.classList.add("reservation-vip");
+        cardGuestInfo.appendChild(cardDataVip);
+    };
+
+ tiene que ir adentro de la función "createCardGuestInfo(fullName,rootype,...)" porque ahí tenes declarada la constante "cardGuestInfo" que es a la que le haces appendchild de cardDataVip, debería quedar esa parte:
+
+	const createCardGuestInfo= (fullName, roomType, roomNumber, chekIndate, passportNumber, status, dataVip) =>{
+    		const cardGuestInfo = document.createElement("div");
+		...
+		..
+		.
+		if(dataVip === true){
+        	  const cardDataVip = document.createElement("div");
+        	  cardDataVip.innerHTML += `<p><strong>VIP</strong></p>`;
+        	  cardDataVip.classList.add("reservation-vip");
+        	  cardGuestInfo.appendChild(cardDataVip);
+    		};
+    
+
+		cardGuestInfo.appendChild(roomImage);
+		return cardGuestInfo;
+	};
+
