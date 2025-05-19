@@ -1,0 +1,126 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #333333;
+    list-style-position: inside;
+}
+body{
+padding: 1rem;
+position: relative;
+min-height: 100vh;
+}
+header, footer {
+    border: 1px solid #f0f0f0;
+    background-color: #382131;
+    width: 100%;
+            
+}
+h1{
+    font-size: 3rem;
+    color: #f5f5f5;
+    padding: 3rem;
+    text-align: center;
+}
+footer{
+    padding: 1.5rem 3rem;
+       
+}
+#counters-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: none;
+    background-color: #f5f5f5;
+    padding: 1rem 1rem;
+    border: 2px solid #f0f0f0;
+    border-radius: 4%;
+    height: 2rem;
+    width: 100%;
+    margin-top: 1.5rem;
+   
+}
+.counters{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;    
+
+}
+ h3  {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-top: 1rem;
+   
+   }
+
+ h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 1rem;
+ }  
+
+#guestsInfo-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+ .cardGuestInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100vw;
+    padding: 0,5rem;
+    border: 2px solid #a5a5a4;
+    margin: 1rem 0;
+}
+
+.cardGuestInfo :hover {
+    border: 3px solid #333333;
+}
+
+.guest-card-pending {
+    background-color: #f0f0f0;
+}
+
+.guest-card-confirmed {
+    background-color: #d5e8d9;
+    
+}
+.guest-card-canceled {
+    background-color: #f8d7da;
+    
+    }
+
+.cardDadaVip {
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}    
+.room-image {
+    align-self: right;
+    height: 5.2rem;
+    width: 9rem;
+    margin-right: 0.25rem;
+}
+
+    footer p{
+        font-size: 1.5rem;
+        color: #f5f5f5;
+        text-align: center;
+    }

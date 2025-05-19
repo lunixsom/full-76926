@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-position: inside;
+}
+
+header{
+    background-color: #382131;
+    width: 98%;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+body{
+    color: #333333;
+    background-color: #f8f8f8;
+}
+
+footer{
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #382131;
+    color: #f5f5f5;
+    border: 1px solid black;
+    margin-top: 1rem;
+}
+
+h1{
+    color: #f5f5f5;
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.8rem;
+    padding-left: 1.5rem;
+}
+
+h3{
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+}
+
+#reservation-management-container{
+    width: 98%;
+    margin: 0 auto;
+}
+
+#reservation-management-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    margin: 0;
+}
+
+#reservation-management-container li{
+    list-style: none;
+}
+
+#reservation-container{
+    width: 100%;
+    padding-left: 1.5rem;
+}
+
+.cards-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 20px;
+    font-size: 1rem;
+}
+  
+.card {
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    width: 100%;
+    border: 2px solid black;
+    line-height: 0.8;
+}
+
+.canceled{
+    background-color: #f8d7da;
+}
+
+.pending{
+    background-color: #f0f0f0;
+}
+
+.confirmed{
+    background-color: #d5e8d9;
+}
+  
+.card-data {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 35%;
+}
+  
+.card-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+  
+.card-vip {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.vip {
+    font-size: 2rem;
+    color: black;
+    text-align: right;
+}
+
+.card:hover{
+    transform: scale(1.01);
+    border-width: 5px;
+}

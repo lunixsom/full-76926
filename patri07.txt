@@ -1,0 +1,5 @@
+
+* no pueden haber espacios en el nombre de una clase para css -> al agregar clase guest dejaste espacios.
+
+* falto mayusucula en toLowerCase y los parentesis al final
+
