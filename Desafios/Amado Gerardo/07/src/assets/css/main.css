@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 1rem;
+    background-color: #f0f0f0;
+}
+header {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #382131;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+h2, h3 {
+    margin: 1rem;
+    text-align: center;
+}
+.counters {
+    margin: 1rem;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    border: solid;
+}
+
+.reservation-card {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    list-style: none;
+    text-align: justify;
+    border: 0.125rem solid;
+    border-radius: 1rem;
+    background-color: #a5a5a4;
+}
+.reservation-image {
+    width: 150px;
+    height: 75px;
+}
+
+.reservation-card-cancelled {
+    background-color: #f8d7da;
+}
+
+.reservation-card-confirmed {
+    background-color: #d5e8d9;
+}
+
+
+footer {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #333333 ;
+}
+
