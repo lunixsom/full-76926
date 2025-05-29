@@ -46,4 +46,5 @@ function displayResults(){
             resultContainer.innerHTML += result;
         }
     }
+    
     displayResults();
