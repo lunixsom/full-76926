@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periódico Dev</title>
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <img src="/mis_codigos/desafioPeriodico/aseets/periodico.png" alt="Logo Periódico Dev" class="logo" />
+        <h1>Periódico Dev</h1>
+    </header>
+
+    <main>
+        <section class="noticias">
+            <h2>NOTICIAS DEL DÍA</h2>
+            <div class="grid">
+                <!-- Tarjeta de noticia -->
+                <article class="card">
+                    <h3>IA multilingüe</h3>
+                    <h4>IA aprende idiomas en tiempo récord</h4>
+                    <input type="checkbox" id="toggle1" />
+                    <p class="preview">
+                        Un nuevo modelo de inteligencia artificial logró aprender más de 100 idiomas en 48 horas...
+                    </p>
+                    <p class="full">
+                        Un nuevo modelo de inteligencia artificial desarrollado por una startup europea logró aprender a
+                        comunicarse en más de 100 idiomas en menos de 48 horas. Utiliza una arquitectura de red neuronal
+                        que simula la plasticidad del cerebro humano, lo cual abre nuevas puertas en traducción
+                        automática y asistencia global.
+                    </p>
+                    <label for="toggle1" class="toggle-btn"></label>
+                </article>
+
+                <article class="card">
+                    <h3>Conexión cerebral</h3>
+                    <h4>Cerebros conectados por Wi-Fi</h4>
+                    <input type="checkbox" id="toggle2" />
+                    <p class="preview">
+                        Investigadores japoneses lograron transmitir señales cerebrales entre personas...
+                    </p>
+                    <p class="full">
+                        Investigadores japoneses presentaron un dispositivo que permite transmitir señales cerebrales
+                        entre personas a través de una red Wi-Fi. Aunque aún está en fase experimental, el avance podría
+                        conducir a nuevas formas de comunicación no verbal y revolucionar el campo de las interfaces
+                        cerebro-máquina.
+                    </p>
+                    <label for="toggle2" class="toggle-btn"></label>
+                </article>
+
+                <article class="card">
+                    <h3>Carga instantánea</h3>
+                    <h4>Autos eléctricos se cargan en 60 segundos</h4>
+                    <input type="checkbox" id="toggle3" />
+                    <p class="preview">
+                        Una batería de estado sólido permite cargar un vehículo eléctrico en solo 60 segundos...
+                    </p>
+                    <p class="full">
+                        Una empresa alemana desarrolló una batería de estado sólido que permite recargar un vehículo
+                        eléctrico en solo 60 segundos. La tecnología promete cambiar el panorama del transporte
+                        sostenible, eliminando uno de los mayores obstáculos: el tiempo de espera en las estaciones de
+                        carga.
+                    </p>
+                    <label for="toggle3" class="toggle-btn"></label>
+                </article>
+
+                <article class="card">
+                    <h3>Nanomedicina</h3>
+                    <h4>Nanobots reparan tejidos humanos</h4>
+                    <input type="checkbox" id="toggle4" />
+                    <p class="preview">
+                        Nanobots del MIT logran reparar tejidos desde dentro del cuerpo humano...
+                    </p>
+                    <p class="full">
+                        Científicos del MIT lograron introducir nanobots en el torrente sanguíneo capaces de identificar
+                        y reparar tejidos dañados. Estos dispositivos, del tamaño de una célula, podrían marcar el
+                        inicio de una nueva era en medicina regenerativa, minimizando la necesidad de cirugías
+                        invasivas.
+                    </p>
+                    <label for="toggle4" class="toggle-btn"></label>
+                </article>
+
+                <article class="card">
+                    <h3>Gafas inteligentes</h3>
+                    <h4>Meta lanza gafas con traducción simultánea</h4>
+                    <input type="checkbox" id="toggle5" />
+                    <p class="preview">
+                        Nuevas gafas AR traducen conversaciones en tiempo real proyectando texto...
+                    </p>
+                    <p class="full">
+                        Meta anunció el lanzamiento de unas gafas inteligentes que ofrecen traducción simultánea en
+                        tiempo real mediante realidad aumentada. El dispositivo es capaz de reconocer el idioma hablado,
+                        traducirlo y proyectar el texto directamente sobre el campo visual del usuario, mejorando la
+                        comunicación global.
+                    </p>
+                    <label for="toggle5" class="toggle-btn"></label>
+                </article>
+
+                <article class="card">
+                    <h3>Chips ecológicos</h3>
+                    <h4>Crean chips biodegradables</h4>
+                    <input type="checkbox" id="toggle6" />
+                    <p class="preview">
+                        Chips fabricados con materiales orgánicos podrían reducir la basura electrónica...
+                    </p>
+                    <p class="full">
+                        Un equipo de investigadores logró diseñar chips electrónicos completamente biodegradables.
+                        Fabricados con materiales orgánicos, estos dispositivos podrían reducir drásticamente el impacto
+                        ambiental de la basura electrónica, y son ideales para usos temporales como sensores médicos o
+                        ambientales.
+                    </p>
+                    <label for="toggle6" class="toggle-btn"></label>
+                </article>
+
+                <article class="card">
+                    <h3>Avance cuántico</h3>
+                    <h4>Nuevo récord en computación cuántica</h4>
+                    <input type="checkbox" id="toggle7" />
+                    <p class="preview">
+                        IBM logró mantener un estado cuántico estable por más de 20 minutos...
+                    </p>
+                    <p class="full">
+                        IBM anunció que logró mantener un estado cuántico estable durante más de 20 minutos, superando
+                        todos los récords previos. Este avance reduce la tasa de error en los cálculos cuánticos y
+                        podría acelerar la llegada de aplicaciones prácticas en criptografía, simulaciones moleculares y
+                        más.
+                    </p>
+                    <label for="toggle7" class="toggle-btn"></label>
+                </article>
+
+                <article class="card">
+                    <h3>ChatBots empáticos</h3>
+                    <h4>ChatBots en atención al cliente</h4>
+                    <input type="checkbox" id="toggle8" />
+                    <p class="preview">
+                        Una nueva generación de ChatBots detecta emociones y responde con empatía...
+                    </p>
+                    <p class="full">
+                        Una nueva generación de ChatBots incorpora inteligencia emocional para detectar el estado
+                        anímico del usuario y responder de manera empática. Empresas de telecomunicaciones y bancos ya
+                        están integrando estas soluciones que mejoran significativamente la experiencia del cliente.
+                    </p>
+                    <label for="toggle8" class="toggle-btn"></label>
+                </article>
+
+                <article class="card">
+                    <h3>Drones bomberos</h3>
+                    <h4>Drones autónomos apagan incendios</h4>
+                    <input type="checkbox" id="toggle9" />
+                    <p class="preview">
+                        Drones con sensores térmicos localizan y atacan focos de fuego sin humanos...
+                    </p>
+                    <p class="full">
+                        Se presentó un escuadrón de drones autónomos equipados con sensores térmicos y algoritmos de
+                        navegación que permiten detectar y combatir focos de incendio sin intervención humana. Esta
+                        tecnología promete ser clave para responder rápidamente en zonas rurales y boscosas.
+                    </p>
+                    <label for="toggle9" class="toggle-btn"></label>
+                </article>
+
+                <article class="card">
+                    <h3>Pantalla flexible</h3>
+                    <h4>Samsung lanza pantalla enrollable</h4>
+                    <input type="checkbox" id="toggle10" />
+                    <p class="preview">
+                        Samsung presenta una pantalla OLED que se enrolla sin perder calidad...
+                    </p>
+                    <p class="full">
+                        Samsung sorprendió al presentar una pantalla OLED que puede enrollarse como una hoja de papel
+                        sin perder calidad de imagen. Este invento abre paso a nuevos dispositivos portátiles y
+                        flexibles, como tablets que caben en el bolsillo o pantallas extensibles para automóviles.
+                    </p>
+                    <label for="toggle10" class="toggle-btn"></label>
+                </article>
+
+                <article class="card">
+                    <h3>Cirugía automatizada</h3>
+                    <h4>Robots cirujanos operan solos</h4>
+                    <input type="checkbox" id="toggle11" />
+                    <p class="preview">
+                        Un robot en Suiza operó sin intervención humana directa con IA adaptativa...
+                    </p>
+                    <p class="full">
+                        En un hospital de Suiza, un robot realizó con éxito una operación de apendicitis sin
+                        intervención humana directa. El sistema, guiado por IA, monitorea constantes vitales en tiempo
+                        real y se adapta durante la cirugía, marcando un hito en la automatización médica.
+                    </p>
+                    <label for="toggle11" class="toggle-btn"></label>
+                </article>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Periódico Dev — Ciencia y Tecnología para todos.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+/* Variables de color */
+:root {
+  --oscuro: #333333;
+  --gris: #52523d;
+  --claro: #f5f5f5;
+  --muy-claro: #fbfbfb;
+  --borde: #dedede;
+  --acento: #a9a99f;
+  --hover: #7b7b64;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--muy-claro);
+  color: var(--oscuro);
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, var(--oscuro), var(--gris));
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+header .logo {
+  width: 50px;
+  height: 50px;
+  
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* MAIN */
+main {
+  padding: 2rem;
+}
+
+.noticias {
+  background-color: var(--claro);
+  padding: 2rem;
+  border-radius: 1rem;
+  background-size: cover;
+}
+
+.noticias h2 {
+  margin-bottom: 1.5rem;
+  color: var(--gris);
+  font-size: 1.8rem;
+}
+
+/* GRID de noticias */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Responsivo */
+@media (max-width: 1260px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* Tarjetas */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  border: 1px solid var(--borde);
+  position: relative;
+}
+
+.card h3 {
+  color: var(--oscuro);
+  font-size: 1.3rem;
+}
+
+.card h4 {
+  color: var(--acento);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card .preview,
+.card .full {
+  overflow: hidden;
+  line-height: 1.6;
+  max-height: 4.8em; /* 3 líneas aprox */
+  transition: max-height 0.3s ease-in-out;
+}
+
+.card .full {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Checkbox oculto */
+.card input[type="checkbox"] {
+  display: none;
+}
+
+/* Mostrar contenido completo cuando el checkbox está marcado */
+.card input[type="checkbox"]:checked ~ .full {
+  max-height: 100vh;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card input[type="checkbox"]:checked ~ .preview {
+  display: none;
+}
+
+/* Botón de toggle */
+.toggle-btn {
+  display: inline-block;
+  color: var(--hover);
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+input[type="checkbox"] + .preview + .full + .toggle-btn::after {
+  content: "Ver más ⇩";
+}
+
+input[type="checkbox"]:checked + .preview + .full + .toggle-btn::after {
+  content: "Ver menos ⇧";
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--oscuro);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
