@@ -1,0 +1,21 @@
+body{
+grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: max-content 1fr max-content;
+
+saque los margins
+
+
+********************************
+
+.header-container{
+width: 100%
+
+
+********************************
+
+#newspaper-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
