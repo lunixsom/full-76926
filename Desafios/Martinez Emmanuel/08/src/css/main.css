@@ -66,10 +66,14 @@ main {
 }
 
 /*Se lo aplico a un div ya que al hacerlo en la card se me agrandan todas las card de las filas*/
-.card div {
+.card {
+    position:relative;
+
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
+    height: max-content;
+    
     background-image: linear-gradient(45deg, #a9a99f,  #dedede, #a9a99f);
     border: 1px solid gray;
     border-radius: 0.5rem;
