@@ -105,6 +105,7 @@ input[type="checkbox"]:checked ~ p {
     line-clamp: unset;
 }
 
+
 .card label {
     display: flex;
     justify-content: right;

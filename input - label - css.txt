@@ -1,0 +1,6 @@
+Uso un input como elemento para switchear
+
+Uso label porque puedo usar la accion de click sobre el mismo para activar el checkbox
+
+
+Selector de combinador de hermanos para que cuando este checked le aplico un estilo a un elemento hermano
