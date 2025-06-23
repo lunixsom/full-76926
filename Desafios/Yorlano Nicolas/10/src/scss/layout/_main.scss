@@ -1,0 +1,111 @@
+@use "../abstracts/variables" as var;
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../assets/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    position: relative;
+    left: 10vw;
+    height: 100vh;
+    width: 40vw;
+    padding: var.$vw-xxl;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var.$vw-xxl;
+
+    background-color: var.$color-dark-alpha-700;
+
+    &__title {
+        font-size: var.$spacing-xl;
+        color: var.$text-color;
+        text-shadow: 2px 2px 30px var.$color-text-shadow;
+    }
+
+    &__text {
+        font-size: var.$spacing-lg;
+        color: var.$white-reset;
+    }
+
+    &__button {
+        width: 7vw;
+        padding: var.$vw-sm var.$vw-md;
+        background: linear-gradient(90deg, var.$text-color, var.$color-principal);
+        border: none;
+        border-radius: 4vh;
+        box-shadow: 1px 1px 30px -20px var.$color-principal;
+
+        font-size: var.$spacing-md;
+        color: var.$white-reset;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 2px 2px 30px -5px var.$color-principal;
+        }
+    }
+
+    &__components-sun {
+        position: fixed;
+        top: 20vh;
+        right: 10vw;
+        height: 25rem;
+        width: 25rem;
+
+        animation: move-sun 20s linear infinite;
+        z-index: 2;
+    }
+
+    &__components-earth {
+        position: fixed;
+        top: 42vh;
+        right: 28vw;
+        width: 5rem;
+        filter: drop-shadow(1px 1px 5px var.$color-dark-alpha-700);
+        animation: move-earth 10s linear infinite;
+    }
+}
+
+@keyframes move-sun {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.25);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes move-earth {
+    0% {
+        transform: translateX(0) scale(1);
+        z-index: 3;
+    }
+    5% {
+        transform: translateX(2vw) scale(1);
+    }
+    25% {
+        transform: translateX(10vw) scale(1.25);
+    }
+    50% {
+        transform: translateX(20vw) scale(1);
+    }
+    75% {
+        transform: translateX(10vw) scale(0.75);
+        z-index: 1;
+    }
+    95% {
+        transform: translateX(2vw) scale(1);
+    }
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+

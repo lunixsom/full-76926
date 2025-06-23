@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.navbar {
+    padding: 2rem;
+    border: 1px solid var.$blancoHueso;
+    border-right: none;
+    border-radius: 2vh 0 0 2vh;
+    ul {
+    display: flex;
+    gap: 2.5vw;
+    
+    li a {
+    font-size: 1.2em;
+    color: var.$colorCoral;
+    text-shadow: 0 0 15px var.$blancoHueso;
+    transition: all 300ms;
+   }
+
+    .selected-item,
+     li a:hover {
+    color: var.$blancoHueso;
+   }
+
+
+  }
+
+}
+

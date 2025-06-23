@@ -1,0 +1,12 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+body {
+    height: var.$height-xxxl;
+    overflow: hidden;
+    background-image: var.$background-img;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}

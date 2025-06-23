@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as var;
+
+
+.footer {
+    position: fixed;
+    right: var.$spacing-md;
+    bottom: var.$spacing-md;
+
+    &__text {
+        color: var.$white-reset;
+    }
+}

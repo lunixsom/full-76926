@@ -1,0 +1,30 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+
+.banner__text {
+    height: var.$height-xxxl;
+    padding: var.$spacing-xl;
+    width: 60%;
+    background-color: var.$color-dark-alpha-700;
+    overflow-y: auto;
+    z-index: 1001;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: var.$gap-xxxl;
+    }
+
+    &__title {
+        font-size: 1.7rem;
+        color: var.$color-primary;
+        filter: drop-shadow(0 0 10px #b1770a);
+    }
+
+    &__description {
+        color: var.$color-white;
+    }
+
+
+}

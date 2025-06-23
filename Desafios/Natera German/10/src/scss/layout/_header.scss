@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+header {
+    position: absolute;
+    top: 5vh;
+    left: 2.25vw;
+    @include mix.box-dimensions(10vh, 95vw, var.$spacing-md, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
