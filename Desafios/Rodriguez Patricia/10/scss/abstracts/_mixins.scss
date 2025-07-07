@@ -1,0 +1,76 @@
+@use "../abstracts/variables" as var;
+
+
+@mixin box-dimensions($height: 100%, $width: 100%, $padding: var.$spacing-md, $margin: 0) {
+    height: $height;
+    width: $width;
+    padding: $padding;
+    margin: $margin;
+}
+@mixin myDisplay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin rotate-logo {
+    @keyframes move-logo {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+}
+
+@mixin rotate-sun{
+    @keyframes move-sun {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.25);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+}
+
+@mixin translate-earth{
+    @keyframes move-earth {
+    0% {
+        transform: translateX(0) scale(1);
+        z-index: 3;
+    }
+
+    5% {
+        transform: translateX(2vw) scale(1);
+    }
+
+    25% {
+        transform: translateX(10vw) scale(1.25);
+    }
+
+    50% {
+        transform: translateX(20vw) scale(1);
+    }
+
+    75% {
+        transform: translateX(10vw) scale(0.75);
+        z-index: 1;
+    }
+
+    95% {
+        transform: translateX(2vw) scale(1);
+    }
+
+    100% {
+        transform: translateX(0) scale(1);
+    }
+  }
+}

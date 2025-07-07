@@ -175,9 +175,15 @@ main{
 .sun{
     width: 36%;
     height: 64%;
+<<<<<<< HEAD
     position: relative;
     top: 110px;
     left: -150px;
+=======
+    position: fixed;
+    top: 110px;
+    left: -10px;
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
     animation: sun-rotation 14s linear infinite;
     z-index: 1;
 }

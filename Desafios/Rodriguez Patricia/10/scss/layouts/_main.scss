@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.banner {
+    position: relative;
+    left: 10vw;
+    height: 100vh;
+    width: 40vw;
+    padding: 3vw;
+
+    @include mix.myDisplay;
+    gap: 3vw;
+
+    background-color: var.$transparencia;
+
+   h2 {
+    font-size: 2rem;
+    color: var.$colorCoral;
+    text-shadow: 2px 2px 30px var.$colorMostaza;
+  }
+
+    p {
+    font-size: 1.25rem;
+    color: var.$blancoHueso;
+  }
+
+}
+
+.sun {
+    position: fixed;
+    top: 20vh;
+    right: 10vw;
+    height: 25rem;
+    width: 25rem;
+
+    animation: move-sun 20s linear infinite;
+    z-index: 2;
+
+}
+@include mix.rotate-sun;
+
+
+.earth {
+    position: fixed;
+    top: 42vh;
+    right: 28vw;
+    width: 5rem;
+    filter: drop-shadow(1px 1px 5px var.$transparencia);
+    animation: move-earth 10s linear infinite;
+}
+
+@include mix.translate-earth;

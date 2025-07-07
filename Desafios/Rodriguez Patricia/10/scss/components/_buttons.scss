@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.banner button {
+    width: 7vw;
+    padding: 0.5vw 1vw;
+    background: linear-gradient(90deg, var.$colorCoral,var.$colorSalmon);
+    border: none;
+    border-radius: 4vh;
+    box-shadow: 1px 1px 30px -20px var.$colorSalmon;
+
+    font-size: 1rem;
+    color: var.$blancoHueso;
+    cursor: pointer;
+    
+    &:hover {
+    box-shadow: 2px 2px 30px -5px var.$colorSalmon;
+   }
+    
+}
+

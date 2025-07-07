@@ -7,6 +7,7 @@
     color: #333333;
     list-style-type: none;
 }
+<<<<<<< HEAD
 body{
     width: 100vw;
     max-height: max-content;
@@ -31,6 +32,34 @@ header{
     
 }
 .magazine-header{
+=======
+/* body{
+    width: 100vw;
+    max-height: max-content;
+} */
+/* header{
+    width: 100vw;
+    height: 4rem;
+    background-color: black;
+} */
+#magazine-container{
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+/*     grid-area: header
+               main
+               footer; */
+    position: absolute;
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+/*     padding-left: 5px;
+    padding-right: 5px; */
+    
+}
+.magazine-header{
+    position: absolute;
+    
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,15 +174,24 @@ h1{
         position: absolute;
         margin-left: 950px;
         margin-top: 200px;
+<<<<<<< HEAD
         animation: translate 30s linear infinite;    
+=======
+        animation: translate 15s linear infinite;    
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
              
     }
     @keyframes translate {
         0% { transform: translateX(0) scale(1);
             z-index: 3;
              }
+<<<<<<< HEAD
         6% { transform: translateX(20px) scale(1);            
             }
+=======
+/*         6% { transform: translateX(20px) scale(1);            
+            } */
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
         
         12.5% { transform: translateX(200px) scale(1.25);
            }
@@ -165,7 +203,11 @@ h1{
         75% {transform: translateX(385px) scale(1.25);
             z-index: -1;
         }
+<<<<<<< HEAD
         95% {transform: translateX(200px)scale(1);
+=======
+        95% {transform: translateX(50px)scale(1);
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
        }
 
        100% {transform: translateX(0) scale(1);

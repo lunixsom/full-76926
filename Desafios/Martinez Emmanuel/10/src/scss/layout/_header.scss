@@ -1,0 +1,15 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+header {
+    width: 100%;
+    height: var.$heigth-header;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: var.$padding-header;
+    z-index: 1000;
+}
+
+

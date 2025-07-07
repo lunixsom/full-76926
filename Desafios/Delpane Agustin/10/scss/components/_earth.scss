@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as var;
+
+.earth {
+    position: fixed;
+    top: 42vh;
+    right: 28vw;
+    width: 5rem;
+    filter: drop-shadow(1px 1px 5px var.$color-dark-alpha-700);
+    animation: move-earth 10s linear infinite;
+}

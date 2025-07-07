@@ -1,0 +1,17 @@
+@use "./variables" as var;
+
+@mixin box-dimensions($height: 100%, $width: 100%, $padding: var.$spacing-md, $margin: 0) {
+    height: $height;
+    width: $width;
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin box-borders($border: var.$border-general var.$color-primary-500, $border-radius: var.$border-radius-md) {
+  border: $border;
+  border-radius: $border-radius;
+}
+
+@mixin animation($name, $duration: 1s, $ease: ease, $repeat: infinite) {
+  animation: $name $duration $ease $repeat;
+}

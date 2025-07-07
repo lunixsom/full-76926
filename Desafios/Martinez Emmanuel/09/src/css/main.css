@@ -223,7 +223,11 @@ footer {
 
     }
     15% {
+<<<<<<< HEAD
         z-index: 101;
+=======
+        /* z-index: 101; */
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
     }
 
     25% {
@@ -233,21 +237,37 @@ footer {
 
     50% {
         transform: translateX(0) translateY(0px) scale(1);
+<<<<<<< HEAD
         z-index: 99;
+=======
+        /* z-index: 99; */
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
     }
 
     75% {
         transform: translateX(-150px) translateY(0px) scale(1);
+<<<<<<< HEAD
         z-index: 99;
     }
 
     85% {
         z-index: 101;
+=======
+       /*  z-index: 99; */
+    }
+
+    85% {
+        /* z-index: 101; */
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
     }
 
     100% {
         transform: translateX(0px) translateY(10px) scale(1.5);
+<<<<<<< HEAD
         z-index: 101;
+=======
+        z-index: 99;
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
     }
 
 }

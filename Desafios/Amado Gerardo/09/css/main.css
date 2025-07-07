@@ -117,17 +117,29 @@ body {
     position: absolute;
     bottom: 12vh;
     left: 50vw;
+<<<<<<< HEAD
     animation: translate-earth 5s ease infinite;
+=======
+    animation: translate-earth 15s linear infinite;
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
 }
 
 @keyframes translate-earth {
     0% {
+<<<<<<< HEAD
         transform: translateX(0px) scale(1.2);
+=======
+        transform: translateX(0px) scale(1);
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
         z-index: 1;
     }
 
     20% {
+<<<<<<< HEAD
         transform: translateX(200px) scale(1.2);
+=======
+        transform: translateX(200px) scale(1.1);
+>>>>>>> 937110ebad012cda5bcc442fb4d88682742657bb
 
     }
 

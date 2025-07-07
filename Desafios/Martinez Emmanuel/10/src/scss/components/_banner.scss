@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+
+.banner {
+    height: var.$height-xxxl;
+    display: flex;
+    padding: var.$padding-banner;
+    justify-content: space-between;
+    align-items: center;
+    gap: var.$banner-gap;
+}
+

@@ -1,0 +1,10 @@
+.sun {
+    position: fixed;
+    top: 20vh;
+    right: 10vw;
+    height: 25rem;
+    width: 25rem;
+
+    animation: move-sun 20s linear infinite;
+    z-index: 2;
+}

@@ -1,0 +1,13 @@
+* eliminar regla header
+
+
+* colocar el id=magazine-container al body
+
+
+* poner position:absolute a .magazine-header
+
+
+* usar propiedades top, right con position absolute en imagenes
+
+
+* poner position:fixed al footer y con las propiedades bottom y right de 0.5rem deberian quedar como en la imagen de referencia.
