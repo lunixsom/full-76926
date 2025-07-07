@@ -1,0 +1,42 @@
+BOOTCAMP DE FULL STACK ENGINEERING
+
+
+DESAFÍO SEMANAL F1-N11
+
+
+I.	OBJETIVOS
+
+●	Validar formularios utilizando expresiones regulares.
+●	Aplicar funciones de orden superior y callbacks.
+●	Implementar closure para manejar conteos.
+●	Gestionar errores con estructuras try…catch.
+●	Manipular la interfaz mediante eventos del DOM.
+
+II.	CONSIGNA
+
+En Gym Dev, un gimnasio exclusivo para desarrolladores y programadores, se desea desarrollar un sistema web que permita registrar la asistencia diaria de los miembros mediante el ingreso de su número de DNI.
+
+El objetivo es que, al ingresar un DNI y presionar el botón "Registrar", el sistema pueda verificar si el cliente se encuentra en la base de datos. En caso afirmativo, deberá mostrar un mensaje personalizado de bienvenida que indique cuántas veces ha asistido al gimnasio. En caso contrario, se deberá mostrar un mensaje de error informativo.
+
+III.	INSTRUCCIONES
+
+●	Validar el campo de DNI utilizando una expresión regular. El formato debe ser ##.###.### y solo deben ser válidos los valores desde 5.000.000 hasta 99.999.999.
+●	Detectar si el DNI ingresado pertenece a un cliente registrado (utilizar el evento click).
+a.	Si el DNI es válido y pertenece a la base de clientes: Mostrar el mensaje: "Hola Lucía, esta es tu asistencia número N". (emplear un callback para mostrar el mensaje de bienvenida).
+b.	Si el DNI es inválido o no pertenece a la base: Mostrar el mensaje de error correspondiente (Aplicar try/catch y throw para manejar estas excepciones).
+●	Implementar un closure para contar las asistencias de manera persistente cada vez que se registra un cliente.
+●	Aplicar la metodología BEM para los nombres de clases en el HTML y SCSS.
+●	Utilizar modificadores --success y --error para los definir los estilos de los mensajes.
+●	Agregar y quitar clases dinámicamente desde JavaScript usando classList.add() y classList.remove().
+●	Utilizar componentes y variables siguiendo la arquitectura 7-1 (usar proyecto base).
+●	Replicar los estilos visuales que se observan en el video demo.webm.
+
+ 
+IV.	DATOS
+
+A continuación, se proporciona la base de datos de clientes registrados que se deberán usar para validar la asistencia mediante su DNI:
+●	ID 1, Lucía Medina, DNI 25.643.820.
+●	ID 2, Martín Maldonado, DNI 31.278.914.
+●	ID 3, Martina Acosta, DNI 40.385.720.
+●	ID 4, Julián Domínguez, DNI 55.942.106.
+●	ID 5, Lorena Morales, DNI 5.643.820.
