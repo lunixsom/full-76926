@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "WlubrifontSC";
+  src: url("../assets/fonts/wLubrifontSC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.asistance {
+  display: flex;
+  flex-direction: column;
+  background: #f0c69f;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #643f15;
+}
+.asistance__title {
+  color: #643f15;
+  font-size: 2rem;
+  padding: 1rem;
+  border-bottom: 2px solid #643f15;
+}
+
+.asistance__form {
+  display: flex;
+  flex-direction: column;
+}
+.asistance__form__label {
+  color: #643f15;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.asistance__form__input {
+  border: 1px solid #643f15;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+.asistance__form__button {
+  background: #f8ead9;
+  border: 1px solid #643f15;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.asistance__form__button:hover {
+  background: #cec0af;
+}
+.asistance__form__message--error {
+  color: #e24141;
+}
+.asistance__form__message--success {
+  color: #3fb451;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar {
+  background-color: #f8ead9;
+  width: 100%;
+  padding: 0.75rem;
+}
+.navbar__list {
+  display: flex;
+  gap: 2.5vw;
+}
+.navbar__item a {
+  color: #643f15;
+  font-size: 1.2rem;
+}
+.navbar__item a:hover {
+  color: #b1770a;
+}
+.navbar__item--active a {
+  color: #b1770a;
+}
+
+.banner__text__button {
+  padding: 0.4rem 1rem;
+  margin: 1.5rem 0;
+  background: linear-gradient(90deg, #fa8072, #a52a2a);
+  border: none;
+  border-radius: 4vh;
+  box-shadow: 1px 1px 30px -20px #643f15;
+  font-size: 1rem;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+.banner__text__button:hover {
+  box-shadow: 2px 2px 30px -5px #643f15;
+}
+
+.logo {
+  padding: 0.75rem;
+}
+.logo__title {
+  font-family: "WlubrifontSC", sans-serif;
+  font-size: 3rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  background-color: #f8ead9;
+  position: absolute;
+  padding: 0.75rem;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+footer .copyright {
+  color: #000000;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem;
+}/*# sourceMappingURL=main.css.map */

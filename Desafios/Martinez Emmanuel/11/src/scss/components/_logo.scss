@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "../base/typography" as typ;
+
+.logo {
+    padding: var.$padding-logo;
+
+    &__title {
+        font-family: "WlubrifontSC", sans-serif;
+        font-size: var.$font-size-xxxl;
+    }
+}
+
+

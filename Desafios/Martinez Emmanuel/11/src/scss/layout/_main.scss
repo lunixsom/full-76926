@@ -1,0 +1,8 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+main {
+    display: flex;
+    align-items: center;
+    padding: var.$spacing-xxl;
+}

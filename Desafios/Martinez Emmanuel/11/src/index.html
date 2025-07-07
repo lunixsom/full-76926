@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Banco Central - Formulario de Alta de Cuenta Bancaria">
+    <meta name="keywords" content="banco, alta de cuenta, caja de ahorro, cuenta corriente, cuenta comitente">
+    <meta name="author" content="Lic. Sergio Regalado Alessi">
+
+    <title>Gym Dev</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo__title">Gym Dev</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item navbar__item--active"><a href="#">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="asistance">
+            <h2 class="asistance__title">Formulario de asistencia</h2>
+            <form class="asistance__form" action="" method="post">
+                <label class="asistance__form__label" for="id-dni">DNI</label>
+                <input class="asistance__form__input" type="text" name="dni" id="id-dni" placeholder="Ingrese su DNI" required>
+                <p id="msg-invalid" class="asistance__form__message asistance__form__message--error hidden">Debes ingresar un DNI válido (##.###.###).</p>
+                <p id="msg-notfound" class="asistance__form__message asistance__form__message--error hidden">El DNI ingresado no pertenece a un cliente registrado.</p>
+                <p id="msg-success" class="asistance__form__message asistance__form__message--success hidden"></p>
+                <button id="btn-process" type="button" class="asistance__form__button">Registrar</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy;2025 Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

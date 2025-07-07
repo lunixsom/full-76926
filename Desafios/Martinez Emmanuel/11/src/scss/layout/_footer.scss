@@ -1,0 +1,17 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+footer {
+    width: 100%;
+    background-color: var.$color-tertiary;
+    position: absolute;
+    padding: var.$padding-footer;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    .copyright {
+        color: var.$color-black;
+    }
+
+}

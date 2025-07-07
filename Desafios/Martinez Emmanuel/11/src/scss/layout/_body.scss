@@ -1,0 +1,7 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+body {
+    display: flex;
+    flex-direction: column;
+}

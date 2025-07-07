@@ -1,0 +1,31 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.navbar {
+    background-color: var.$color-tertiary;
+    width: 100%;
+    padding: var.$padding-logo;
+    &__list {
+        display: flex;
+        gap: var.$gap-medium;
+    }
+
+    &__item {
+
+        a {
+            color: var.$color-secondary;
+            font-size: var.$font-size-lg;
+            &:hover {
+                color: var.$color-accent;
+            }
+        }
+
+        &--active {
+            a {
+                color: var.$color-accent;
+            }
+        }
+    }
+}
+
+
