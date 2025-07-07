@@ -1,0 +1,24 @@
+BOOTCAMP DE FULL STACK ENGINEERING
+
+
+DESAFÍO SEMANAL F1-N09
+
+
+OBJETIVOS
+
+Integrar animaciones con CSS.
+Aplicar conceptos de diseño y maquetación web.
+Desarrollar habilidades de organización de contenido web.
+
+CONSIGNA
+
+Diseñar la portada principal de una revista digital llamada Space Dev, especializada en noticias y artículos sobre avances espaciales y tecnología satelital. El sitio debe tener una estética moderna y llamativa, simulando un entorno espacial visualmente atractivo y utilizando imágenes, animaciones, y organización clara del contenido.
+
+INSTRUCCIONES
+
+Crear una estructura HTML con las etiquetas semánticas adecuadas. En el header incluir un logotipo compuesto por una imagen y un título, junto con una barra de navegación que contenga cuatro enlaces: Inicio, Nosotros, Galería y Contactos. El enlace "Inicio" debe destacarse visualmente para indicar que el usuario se encuentra en la página de inicio. Dentro del main agregar una sección tipo banner con un título llamativo y un artículo con varios párrafos descriptivos. Debajo de este contenido, incluir un botón con el texto "Leer más". También se deben incorporar dos imágenes: una del Sol y otra de la Tierra, ambas con animaciones aplicadas mediante CSS. Finalmente, colocar un footer simple que incluya un mensaje de derechos reservados.
+Aplicar estilos que abarquen el fondo, la tipografía, los espacios y las animaciones. El fondo debe ser una imagen espacial que ocupe toda la pantalla (background-image). El encabezado debe estar estilizado para posicionar y alinear correctamente el logotipo y la barra de navegación. El logotipo debe contar con una animación rotatoria continua utilizando @keyframes. El banner debe tener un fondo oscuro semitransparente y estar alineado a la izquierda. Los textos deben utilizar colores llamativos que aseguren buena legibilidad. Las animaciones deben incluir una rotación y escalado progresivo del Sol, y una traslación con cambios de escala para la Tierra, ambas definidas con @keyframes. El botón dentro del banner debe contar con un efecto de sombra al pasar el cursor sobre él (hover). Para lograr un diseño profesional y bien organizado, se recomienda el uso de unidades relativas (vh, vw, rem), flexbox y propiedades position.
+Usar los colores: #f5f5f5, #fa8072, #a52a2a, #b1770a y rgba(0, 0, 0, 0.75).
+Las imágenes están dentro de la carpeta del desafío.
+Replicar los estilos visuales que se observan en el video demo.webm.
+Utilizar los textos definidos en este archivo.
