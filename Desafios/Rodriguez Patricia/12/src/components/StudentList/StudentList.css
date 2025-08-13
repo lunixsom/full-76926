@@ -1,0 +1,9 @@
+.student-list {
+  width: 600px;
+  border: 1px solid #b0bdcf;
+  border-radius: 0.25rem;
+}
+.student-list__content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}/*# sourceMappingURL=StudentList.css.map */

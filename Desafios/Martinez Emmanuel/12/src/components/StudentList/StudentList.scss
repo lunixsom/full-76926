@@ -1,0 +1,10 @@
+.student-list {
+    width: 800px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        color: #214165;
+    }
+}

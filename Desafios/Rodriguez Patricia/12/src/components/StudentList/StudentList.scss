@@ -1,0 +1,15 @@
+.student-list{
+    width: 600px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    
+    
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        border-radius: 0.25rem;
+    }
+};

@@ -1,0 +1,13 @@
+.student-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.student-item__name {
+  font-weight: bold;
+  padding-bottom: 0.25rem;
+  color: #214165;
+}
+.student-item--isPresent, .student-item--isAbsent {
+  align-self: flex-start;
+}/*# sourceMappingURL=StudentListItem.css.map */

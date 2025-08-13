@@ -1,0 +1,17 @@
+.student{
+
+    h1{
+        color: #0b0b0b;
+        font-size: 2rem;
+    }
+
+    &__stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #dfdfdf;
+        border: 2px solid #b0bdcf;
+        border-radius: 8px;
+        color: #214165;
+    }
+}

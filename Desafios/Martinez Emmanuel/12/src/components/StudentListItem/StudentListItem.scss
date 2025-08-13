@@ -1,0 +1,28 @@
+.student-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 2px solid #b0bdcf;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 3px 0 #b0bdcf;
+
+    &__top-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #b0bdcf;
+        padding-bottom: 0.5rem;
+    }
+
+    &__age,
+    &__email,
+    &__phone,
+    &__instagram {
+        display: flex;
+        align-items: center;
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+}

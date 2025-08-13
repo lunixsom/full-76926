@@ -1,0 +1,20 @@
+@use "./variables" as var;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #222222;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:link,
+a:visited {
+    color: var.$color-neutro-700;
+    text-decoration: none;
+}

@@ -1,0 +1,24 @@
+.student-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+.student-item__head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #b0bdcf;
+  margin-bottom: 1.5rem;
+}
+.student-item__name {
+  font-weight: bold;
+  padding-bottom: 0.25rem;
+  color: #214165;
+  padding: 10px 0;
+}
+.student-item__status {
+  font-size: 0.8rem;
+  padding-right: 5px;
+}

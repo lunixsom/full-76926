@@ -1,0 +1,36 @@
+@use "../../scss/variables" as var;
+
+.student-list-item {
+    .card {
+
+        background-color: #ffffff;
+        width: 600px;
+        border-radius: 0.25rem;
+        padding: 1rem;
+        border: 1px solid #b0bdcf;
+        box-shadow: 0 0 1px var.$color-dark-alpha-700;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            border-bottom: 1px solid #b0bdcf;
+            padding-bottom: 0.4rem;
+
+            &-title {
+                color: #214165;
+            }
+        }
+
+        &__content {
+
+            padding-top: 0.4rem ;
+
+            &-item {
+                color: #214165;
+                padding: 0.1rem;
+
+            }
+        }
+    }
+}
