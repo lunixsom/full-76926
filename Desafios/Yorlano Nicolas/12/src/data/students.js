@@ -6,7 +6,7 @@ export const students = [
         email: "ana.garcia@email.com", 
         phone: "123-456-7890", 
         instagram: "@ana_garcia", 
-        isPresent: true 
+        isPresent: false
     },
     { 
         id: 2, 
