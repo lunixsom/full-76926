@@ -1,0 +1,11 @@
+@use "@/scss/variables" as var;
+
+.header {
+    grid-area: header;
+    background-color: var.$color-primary-500;
+
+    &__title {
+        text-align: center;
+        color: var.$color-neutro-100;
+    }
+}

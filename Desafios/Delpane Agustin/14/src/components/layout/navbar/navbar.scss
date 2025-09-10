@@ -1,0 +1,25 @@
+@use "@/scss/variables" as var;
+
+.navbar {
+    grid-area: navbar;
+    background-color: var.$color-primary-400;
+
+    &__menu {
+        display: flex;
+        gap: var.$spacing-md;
+        padding: var.$spacing-md;
+    }
+
+    &__item {
+        a {
+            color: var.$color-primary-800 !important;
+        }
+
+        &:hover,
+        &--active {
+            a {
+                font-weight: var.$font-weight-bold;
+            }
+        }
+    }
+}

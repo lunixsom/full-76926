@@ -1,0 +1,19 @@
+@use "@/scss/variables" as var;
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    &__text {
+        display: flex;
+        padding: var.$spacing-xs;
+    }
+
+    &__button {
+        display: flex;
+        margin: var.$spacing-md;
+    }
+}

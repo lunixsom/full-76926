@@ -1,0 +1,14 @@
+@use "@/scss/variables" as var;
+
+.navbar-item {
+    a {
+        color: var.$color-primary-800 !important;
+    }
+
+    &:hover,
+    &--active {
+        a {
+            font-weight: var.$font-weight-bold;
+        }
+    }
+}

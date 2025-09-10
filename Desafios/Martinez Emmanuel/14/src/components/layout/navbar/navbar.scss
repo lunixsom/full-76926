@@ -1,0 +1,12 @@
+@use "@/scss/variables" as var;
+
+.navbar {
+    grid-area: navbar;
+    background-color: var.$color-primary-300;
+
+    &__menu {
+        display: flex;
+        gap: var.$spacing-md;
+        padding: var.$spacing-md;
+    }
+}

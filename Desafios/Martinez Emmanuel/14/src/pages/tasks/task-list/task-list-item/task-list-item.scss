@@ -1,0 +1,24 @@
+@use "@/scss/variables" as var;
+
+.task-list-item {
+    display: flex;
+    min-width: 360px;
+    flex-direction: column;
+    justify-content: left;
+    gap: var.$spacing-sm;
+    padding: var.$spacing-md;
+    border: 1px solid grey;
+    border-radius: 1rem;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__actions {
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+
+    }
+}

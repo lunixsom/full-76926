@@ -1,0 +1,8 @@
+@use "@/scss/variables" as var;
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: var.$spacing-md;
+    padding: 1rem;
+}

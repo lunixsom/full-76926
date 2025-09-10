@@ -1,0 +1,6 @@
+@use "@/scss/variables" as var;
+@use "@/scss/reset";
+
+#root {
+    background-color: var.$color-neutro-200;
+}
