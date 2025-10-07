@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --no-warnings src/app.js",
+    "dev": "nodemon src/app.js",
+    "lint": "eslint src --fix"
+  },
+  "keywords": [],
+  "author": "Emmanuel Martínez",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2"
+  }
+}
