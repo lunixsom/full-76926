@@ -1,0 +1,98 @@
+[
+	{
+		"id": 1,
+		"brand": "Nike",
+		"model": "Air Force 1",
+		"size": 42,
+		"price": 120000
+	},
+	{
+		"id": 2,
+		"brand": "Adidas",
+		"model": "Superstar",
+		"size": 41,
+		"price": 95000
+	},
+	{
+		"id": 3,
+		"brand": "Puma",
+		"model": "RS-X",
+		"size": 43,
+		"price": 110000
+	},
+	{
+		"id": 4,
+		"brand": "Nike",
+		"model": "Chuck Taylor",
+		"size": 40,
+		"price": 80000
+	},
+	{
+		"id": 5,
+		"brand": "Reebok",
+		"model": "Club C 85",
+		"size": 44,
+		"price": 87000
+	},
+	{
+		"id": 6,
+		"brand": "Vans",
+		"model": "Old Skool",
+		"size": 42,
+		"price": 76000
+	},
+	{
+		"id": 7,
+		"brand": "Jordan",
+		"model": "Retro 4",
+		"size": 43,
+		"price": 200000
+	},
+	{
+		"id": 8,
+		"brand": "New Balance",
+		"model": "550",
+		"size": 41,
+		"price": 115000
+	},
+	{
+		"id": 9,
+		"brand": "Nike",
+		"model": "Chuck Taylor",
+		"size": 40,
+		"price": 80000,
+		"thumbnail": "default.jpg"
+	},
+	{
+		"id": 10,
+		"brand": "Nike",
+		"model": "Chuck Taylor",
+		"size": 40,
+		"price": 80000,
+		"thumbnail": "default.jpg"
+	},
+	{
+		"id": 11,
+		"brand": "Nike",
+		"model": "Chuck Taylor",
+		"size": 40,
+		"price": 80000,
+		"thumbnail": "default.jpg"
+	},
+	{
+		"id": 12,
+		"brand": "Nike",
+		"model": "Chuck Taylor",
+		"size": "50",
+		"price": "1000000",
+		"thumbnail": "image_21712_20250926_213908.jpg"
+	},
+	{
+		"id": 13,
+		"brand": "Nike",
+		"model": "Chuck Taylor",
+		"size": "50",
+		"price": "1000000",
+		"thumbnail": "image_74284_20250926_213954.jpg"
+	}
+]

@@ -1,0 +1,26 @@
+[
+	{
+		"id": 4,
+		"brand": "Puma",
+		"model": "Puma180",
+		"size": "39",
+		"price": "140000",
+		"thumbnail": "image_95260_20251006_171114.jpg"
+	},
+	{
+		"id": 5,
+		"brand": "Puma",
+		"model": "SuadeXL",
+		"size": "39",
+		"price": "179000",
+		"thumbnail": "image_63373_20251006_171141.jpg"
+	},
+	{
+		"id": 6,
+		"brand": "Adidas",
+		"model": "Campus",
+		"size": "39",
+		"price": "220000",
+		"thumbnail": "default.jpg"
+	}
+]

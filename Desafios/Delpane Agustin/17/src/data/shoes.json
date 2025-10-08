@@ -1,0 +1,50 @@
+[
+	{
+		"id": 1,
+		"brand": "Converse",
+		"model": "Chuck Taylor",
+		"size": "38",
+		"price": "80000",
+		"thumbnail": "default.jpg"
+	},
+	{
+		"id": 3,
+		"brand": "Adidas",
+		"model": "Run",
+		"size": "38",
+		"price": "80000",
+		"thumbnail": "image_67888_20250925_163342.jpg"
+	},
+	{
+		"id": 4,
+		"brand": "Nike",
+		"model": "Run",
+		"size": "42",
+		"price": "80000",
+		"thumbnail": "image_77863_20250925_162916.jpg"
+	},
+	{
+		"id": 5,
+		"brand": "Nike",
+		"model": "Run",
+		"size": "40",
+		"price": "80000",
+		"thumbnail": "image_83350_20250925_162920.jpg"
+	},
+	{
+		"id": 6,
+		"brand": "Coverse",
+		"model": "Red",
+		"size": "42",
+		"price": "80000",
+		"thumbnail": "image_19962_20250925_162932.jpg"
+	},
+	{
+		"id": 7,
+		"brand": "Coverse",
+		"model": "Red",
+		"size": "42",
+		"price": "80000",
+		"thumbnail": "image_57859_20250925_163308.jpg"
+	}
+]
