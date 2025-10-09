@@ -1,0 +1,45 @@
+
+Clase 53
+
+Enrutador de carpetas (0 a 13 min )
+
+    Armamos las diferentes rutas para entrar al Root al src y al public.
+
+
+    Es un utilitario.
+
+    A veces las rutas pueden funcionar bien localmente pero cuando lo subimos se rompe, para poder manejar mejor eso una buena forma es CONSTRIUR NUESTRO PROPIO ENRUTADOR.
+
+    El enrutador lo vamos a construir a partir del modulo nativo path que tiene node js.
+
+    Es util para operaciones como:
+
+            Obtener extensiones, nombres de archivos, directorios base y rutas absolutas.
+
+
+
+Modularizamos en entrypoint ( 14 min a  )
+
+    Es una propuesta de como tener configuraciones limpias, hizo ejemplo con el middleware que me ayuda a leer/decodificar el body de una peticion json (POST por ejemplo).
+
+        app.use(express.json())
+
+
+
+Servidor Estatico ( 27 min a  )
+
+    El SSR (renderizado del lado del servidor) tiene sus ventajas: todo lo que renderizas del lado Backend es mas optimo para los sitios web, se posiciona mejor con los CEO porque es MAS LIVIANO, SE PROCESAN MUCHO MAS RAPIDO LAS COSAS.
+
+    Pero es un poco mas duro el manejo, es mas limitado.
+
+    El profe recomienda la combinacion.
+
+    Lo que se usa mucho del lado del servidor renderizar (SSR) es hacer LANDING PAGE, esas paginas que mandamos por mail por promocion, paginas que necesitamos que sean rapidas, que tengan un buen posicionamiento en lo que son los motores de busqueda.
+
+    Otra cosa mas que se arma del lado del servidor muchas veces es el armado de plantillas/ templates para los mails.
+
+
+    En la Carpeta PUBLIC no se pone nada sensible es todo lo que necesitas que desde afuera sea accedido, como las imagenes de los productos a renderizar por ejemplo.
+
+
+
