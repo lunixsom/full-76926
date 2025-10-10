@@ -1,0 +1,24 @@
+.student {
+    max-width: 600px;
+    margin: 0 auto;
+
+    &__title {
+        text-align: center;
+        padding: 1rem 0;
+        font-size: rem;
+    }
+
+    &__statistics {
+        display: flex;
+        justify-content: space-around;
+
+        padding: 0.5rem 0;
+        background-color: #dfdfdf;
+        border-radius: 0.25rem;
+        border: 1px solid #b0bdcf;
+
+        &-content {
+            color: #214165;
+        }
+    }
+}
