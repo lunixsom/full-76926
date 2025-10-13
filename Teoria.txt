@@ -43,3 +43,29 @@ Servidor Estatico ( 27 min a  )
 
 
 
+Router de Express ( 48 min a 1 hs )
+
+
+Emprolijando las respuestas del Router (1:04 hs)
+
+    Uso de payload 
+
+        En la respuesta del controlador generalmente en la comunidad no se usa el send sino directamente json:
+
+
+                    res.status(200).json({ status: "success", payload: car})
+
+        En el payload va la carga util, los datos que necesitas vos, lo que vos devolves.
+
+        Entonces si es Error te devuelve un mensaje a la peticion si en cambio el status es success devuelve el payload con lo que queriamos.
+
+
+
+Servidor de Mail ( 1:11 hs a  )
+
+    Utilizamos el modulo Nodemailer
+
+
+    Brevo
+
+    
