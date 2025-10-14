@@ -63,9 +63,17 @@ Emprolijando las respuestas del Router (1:04 hs)
 
 Servidor de Mail ( 1:11 hs a  )
 
-    Utilizamos el modulo Nodemailer
+    Configuracion demailer para poder usarlo:
+
+        Utilizamos el modulo Nodemailer
+
+        Brevo
+
+        Configuro creacion y veificacion del transport. (1:35 hs)
 
 
-    Brevo
 
+    Creamos ruta nueva para envio del mail ( 1:45 hs )
+
+    
     
