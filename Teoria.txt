@@ -75,5 +75,14 @@ Servidor de Mail ( 1:11 hs a  )
 
     Creamos ruta nueva para envio del mail ( 1:45 hs )
 
-    
-    
+
+    Tambien con Nodemailer podemos configurar para enviar nosotros mail, por ejemplo cuando se registra un usuario y le queres enviar una bienvenidad o codigo de verificacion.
+
+
+
+*****************************************************************************************
+
+Clase 54
+
+
+
