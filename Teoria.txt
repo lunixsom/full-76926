@@ -85,4 +85,31 @@ Servidor de Mail ( 1:11 hs a  )
 Clase 54
 
 
+File System - modulo fs
+
+
+Multer - Uploader File
+
+
+
+
+*****************************************************************************************
+
+Clase 55
+
+
+Fundamentos de body
+
+Un CSV es simplmente un archivo plano que tiene el formato de una estructura de tabla como columnas y filas que se componen por celdas. Es una extension gratuita libre y que puede funcionar en cualquier de los gestores de planillas de calculo.
+
+
+La ventaja de las BD no relacionales es que pueden manejar grandes caudales de informacion.
+
+Las relacionales son especialistas en datos que tienen que ser muy estructurados, muy relacionados y estos tienen que ver con todos los sistemas que son de gestion.
+
+
+
+
+
+
 
