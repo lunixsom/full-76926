@@ -7,7 +7,7 @@ Enrutador de carpetas (0 a 13 min )
 
 
     Es un utilitario.
-
++
     A veces las rutas pueden funcionar bien localmente pero cuando lo subimos se rompe, para poder manejar mejor eso una buena forma es CONSTRIUR NUESTRO PROPIO ENRUTADOR.
 
     El enrutador lo vamos a construir a partir del modulo nativo path que tiene node js.
@@ -108,8 +108,23 @@ La ventaja de las BD no relacionales es que pueden manejar grandes caudales de i
 Las relacionales son especialistas en datos que tienen que ser muy estructurados, muy relacionados y estos tienen que ver con todos los sistemas que son de gestion.
 
 
+Almacenan datos en formato BSON, que es un JSON potenciado, que permite no solo almacenar data como un json comun sino que permite agregar informacion binaria, osea dentro de esa base de datos podrias tranquilamente guardar fotos o archivos.
 
 
 
 
+Instalacion MongoShell ( 1:02 hs )
 
+    Instalas desde mongoatlas en el btoon de connect yendo a la opcion de shell.
+
+
+        Cuando instalas IMPORTANTE cambiar la direccion de la instalacion destildando la opcion solo para mi.
+
+        Y LUEGO MODIFICAR LA RUTA PARTE FINAL DEL COMANDO PARA CONFIGURAR LAS VARIABLES DE ENTORNO ( 1:12 HS )
+
+    Luego de instalarlo hay que CONFIGURAR LAS VARIABLES DE ENTORNO
+
+    Abrimos prowershell como administrador
+
+
+    Copiamos el String de coneccion
